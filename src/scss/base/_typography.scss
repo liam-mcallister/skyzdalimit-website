@@ -1,3 +1,25 @@
 /**
  * Basic typography style for copy text
  */
+
+@font-face {
+  font-family: SheldonFeather;
+  src: url("../fonts/SheldonFeather.woff2") format("woff2"),
+    url("../fonts/SheldonFeather.woff") format("woff");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+body {
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.navbar-logo {
+  font-family: SheldonFeather;
+  font-size: 3rem;
+}
