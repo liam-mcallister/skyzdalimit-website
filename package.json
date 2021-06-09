@@ -1,0 +1,27 @@
+{
+  "name": "skyzdalimit-website",
+  "version": "1.0.0",
+  "description": "A website for Skyzdalimit",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liam-mcallister/skyzdalimit-website.git"
+  },
+  "author": "Liam McAllister",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liam-mcallister/skyzdalimit-website/issues"
+  },
+  "homepage": "https://github.com/liam-mcallister/skyzdalimit-website#readme",
+  "dependencies": {
+    "glightbox": "^3.0.9"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.34.1"
+  }
+}

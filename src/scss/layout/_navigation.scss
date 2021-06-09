@@ -1,0 +1,13 @@
+@use 'abstracts/variables';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    background: variables.$primary-color;
+}
+
+.navbar__nav {
+    display: flex;
+}
