@@ -1,3 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15rem 2rem;
+  text-align: center;
+
+  @include headerImage(
+    linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)),
+    url(../../images/header/home-header.jpg)
+  );
+
+  & p {
+    margin-bottom: 2rem;
+  }
+}

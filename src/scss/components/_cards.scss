@@ -1,0 +1,38 @@
+@use "abstracts/variables" as *;
+
+.card {
+  max-width: 250px;
+  background: $secondary-color;
+  color: $white;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.card__bottom {
+  padding: 1rem;
+
+  & p {
+    margin-bottom: 1rem;
+  }
+}
+
+/*-----------------------------------*/
+.card-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  background: $white;
+  color: $secondary-color;
+
+  & h2 {
+    margin-bottom: 1rem;
+  }
+}

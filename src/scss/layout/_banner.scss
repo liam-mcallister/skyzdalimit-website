@@ -1,0 +1,13 @@
+@use "abstracts/variables" as *;
+
+.banner {
+  width: 100%;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: $attention-color;
+  color: $secondary-color;
+
+  & h2 {
+      margin-bottom: 0;
+  }
+}

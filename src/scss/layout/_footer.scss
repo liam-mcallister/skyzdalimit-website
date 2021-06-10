@@ -1,3 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+@use "abstracts/variables" as *;
+
+footer {
+    display: flex;
+    width: 100%;
+    background: $secondary-color;
+}
+
+.site-map {
+    display: flex;
+}

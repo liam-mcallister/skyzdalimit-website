@@ -1,3 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+@mixin headerImage($img-grad, $bg-img) {
+  background-image: $img-grad, $bg-img;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
