@@ -4,75 +4,82 @@
 @use 'abstracts/variables' as *;
 
 .btn {
-  display: inline-block;
-  padding: 0.75rem 2.5rem;
-  border-radius: 1.5rem;
-  font-weight: 700;
-  background: $attention-color;
+    display: inline-block;
+    padding: 0.75rem 2.5rem;
+    border-radius: 1.5rem;
+    font-weight: 700;
+    background: $attention-color;
+    transition: all 0.25s linear;
 
-  &:hover {
+    &:hover {
+        background: $secondary-color;
+        color: $white;
+    }
+}
+
+/*----------------------------------------------*/
+.btn--card:hover {
     background: $white;
-  }
+    color: $secondary-color;
 }
 
 /*----------------------------------------------*/
 .burger-btn {
-  display: none;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  border: none;
-
-  &:focus,
-  &:active,
-  &:hover {
+    display: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
     border: none;
-    outline: none;
-  }
+
+    &:focus,
+    &:active,
+    &:hover {
+        border: none;
+        outline: none;
+    }
 }
 
 @media (max-width: 991px) {
-  .burger-btn {
-    display: block;
-    z-index: 2;
-    position: absolute;
-    right: 32px;
-    top: 55px;
-    appearance: none;
+    .burger-btn {
+        display: block;
+        z-index: 2;
+        position: absolute;
+        right: 32px;
+        appearance: none;
 
-    &:checked + .burger-label .top {
-      transform: rotate(-45deg);
-      margin-top: 15px;
+        &:checked + .burger-label .top {
+            transform: rotate(-45deg);
+            margin-top: 15px;
+        }
+
+        &:checked + .burger-label .middle {
+            transform: rotate(45deg);
+            margin-top: -8px;
+        }
+
+        &:checked + .burger-label .bottom {
+            opacity: 0;
+        }
+
+        &:checked + .burger-label + .navbar__nav {
+            transform: translateY(100vh);
+        }
     }
 
-    &:checked + .burger-label .middle {
-      transform: rotate(45deg);
-      margin-top: -8px;
+    .burger-label {
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 2;
+        position: absolute;
+        right: 35px;
     }
 
-    &:checked + .burger-label .bottom {
-      opacity: 0;
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: $white;
+        transition: all 0.1s ease-in-out;
     }
-
-    &:checked + .burger-label + .navbar__nav {
-      transform: translateY(100vh);
-    }
-  }
-
-  .burger-label {
-    background-color: transparent;
-    cursor: pointer;
-    z-index: 2;
-    position: absolute;
-    right: 35px;
-  }
-
-  .bar {
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: $white;
-    transition: all 0.1s ease-in-out;
-  }
 }

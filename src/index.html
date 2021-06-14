@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="scss/styles.scss">
 </head>
 
-<body>
+<body id="body">
 
     <nav class="navbar">
         <a href="index.html" class="navbar-logo">Skyz<span>da</span>limit</a>
@@ -21,11 +21,11 @@
         </label>
         <ul class="navbar__nav">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Productions</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Patrons</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Volunteering</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="productions.html" class="nav-link">Productions</a></li>
+            <li class="nav-item"><a href="patrons.html" class="nav-link">Patrons</a></li>
+            <li class="nav-item"><a href="volunteering.html" class="nav-link">Volunteering</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             <li class="nav-item"><a href="#" class="btn">Donate</a></li>
         </ul>
     </nav>
@@ -42,61 +42,56 @@
 
     <section class="whats-on">
         <h2>What's On</h2>
-
-        <div class="container">
-            <div class="card">
-                <div class="card__top">
+        <ul class="cards">
+            <li class="cards__item">
+                <div class="card">
                     <img src="../images/header/home-header.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__title">Flex</div>
+                        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined.
+                            The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1
+                            auto. </p>
+                        <a href="#" class="btn btn--card">Button</a>
+                    </div>
                 </div>
-                <div class="card__bottom">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis asperiores cumque rem eaque
-                        culpa necessitatibus et.</p>
-                    <a href="#" class="btn">More</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__top">
+            </li>
+            <li class="cards__item">
+                <div class="card">
                     <img src="../images/header/home-header.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__title">Flex Grow</div>
+                        <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts
+                            a unitless value that serves as a proportion. It dictates what amount of the available space
+                            inside the flex container the item should take up.</p>
+                        <a href="#" class="btn btn--card">Button</a>
+                    </div>
                 </div>
-                <div class="card__bottom">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis asperiores cumque rem eaque
-                        culpa
-                        necessitatibus et.</p>
-                    <a href="#" class="btn">More</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__top">
+            </li>
+            <li class="cards__item">
+                <div class="card">
                     <img src="../images/header/home-header.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__title">Flex Shrink</div>
+                        <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative
+                            numbers are invalid.</p>
+                        <a href="#" class="btn btn--card">Button</a>
+                    </div>
                 </div>
-                <div class="card__bottom">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis asperiores cumque rem eaque
-                        culpa
-                        necessitatibus et.</p>
-                    <a href="#" class="btn">More</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__top">
+            </li>
+            <li class="cards__item">
+                <div class="card">
                     <img src="../images/header/home-header.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__title">Flex Basis</div>
+                        <p class="card__text">This defines the default size of an element before the remaining space is
+                            distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means
+                            "look at my width or height property."</p>
+                        <a href="#" class="btn btn--card">Button</a>
+                    </div>
                 </div>
-                <div class="card__bottom">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis asperiores cumque rem eaque
-                        culpa
-                        necessitatibus et.</p>
-                    <a href="#" class="btn">More</a>
-                </div>
-            </div>
-        </div>
-
-        <a href="#" class="btn">See All Productions</a>
+            </li>
+        </ul>
+        <a href="#" class="btn">All Productions</a>
     </section>
 
     <section class="mission">
@@ -115,45 +110,64 @@
     </section>
 
     <section class="stats">
-        <div class="card-circle">
-            <h2>123</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <div class="stats__top">
+            <div class="card-circle">
+                <h2>123</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
         </div>
-        <div class="card-circle">
-            <h2>123</h2>
-            <p>Lorem ipsum, dolor sit erer tt erewff amet consectetur.</p>
+        <div class="stats__middle">
+            <div class="card-circle">
+                <h2>123</h2>
+                <p>Lorem ipsum, dolor sit erer tt erewff amet consectetur.</p>
+            </div>
         </div>
-        <div class="card-circle">
-            <h2>123</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="stats__bottom">
+            <div class="card-circle">
+                <h2>123</h2>
+                <p>Lorem ipsum, dolor sit erer tt erewff amet consectetur.</p>
+            </div>
         </div>
     </section>
 
-    <section class="banner">
-        <h2>Want to help? Donate Now!</h2>
-    </section>
+    <a href="#" class="banner">
+        <h2>Want to help?</h2>
+        <h2>Donate Now!</h2>
+    </a>
 
     <footer>
-        <div class="footer__left">
-            <p>skyzdalimitclub@gmail.com</p>
-            <p>072 4349 6441</p>
-            <p>22 Knocksilla Park Omagh BT79 0JR</p>
-        </div>
-
-        <div class="footer__right">
-            <ul class="site-map">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Productions</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Patrons</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Volunteering</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-            <p>&copy; Skyzdalimit 2021</p>
-            <p>Registered Charity: 102443</p>
+        <div class="inner-flex">
+            <div class="footer__top">
+                <p>skyzdalimitclub@gmail.com</p>
+                <p>072 4349 6441</p>
+                <div>
+                    <p>22 Knocksilla Park</p>
+                    <p>Omagh</p>
+                    <p>BT79 0JR</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="site-map">
+                    <li class="footer-item"><a href="index.html">Home</a></li>
+                    <li class="footer-item"><a href="about.html">About</a></li>
+                    <li class="footer-item"><a href="productions.html">Productions</a></li>
+                    <li class="footer-item"><a href="patrons.html">Patrons</a></li>
+                    <li class="footer-item"><a href="volunteering.html">Volunteering</a></li>
+                    <li class="footer-item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <p>&copy; Skyzdalimit 2021</p>
+                <p>Registered Charity: 102443</p>
+                <div class="footer-icons">
+                    <a href="#"><img class="icon" src="../images/icons/facebook.svg" alt=""></a>
+                    <a href="#"><img class="icon" src="../images/icons/twitter.svg" alt=""></a>
+                    <a href="#"><img class="icon" src="../images/icons/instagram.svg" alt=""></a>
+                    <a href="#"><img class="icon" src="../images/icons/google.svg" alt=""></a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -1,35 +1,71 @@
 @use "abstracts/variables" as *;
 
 .whats-on {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 3rem 2rem;
-  color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 1rem;
+    color: $secondary-color;
 }
 
 .mission {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 3rem 2rem;
-  text-align: center;
-  background: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 1rem;
+    text-align: center;
+    background: $primary-color;
+
+    & p {
+        margin-bottom: 2rem;
+    }
 }
 
 .stats {
-  width: 100%;
-  padding: 5rem 2rem;
+    width: 100%;
+    padding: 5rem 1rem;
 
-  background-image: linear-gradient(
-      rgba(12, 12, 12, 0.6),
-      rgba(12, 12, 12, 0.6)
-    ),
-    url(../../images/header/home-header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-image: linear-gradient(
+            rgba(12, 12, 12, 0.6),
+            rgba(12, 12, 12, 0.6)
+        ),
+        url(../../images/header/home-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.stats__top {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.stats__middle {
+    @extend .stats__top;
+}
+
+.stats__bottom {
+    @extend .stats__top;
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------*/
+@media (min-width: 500px) {
+    .stats__top {
+        justify-content: flex-start;
+    }
+
+    .stats__middle {
+        justify-content: center;
+    }
+
+    .stats__bottom {
+        justify-content: flex-end;
+    }
 }
