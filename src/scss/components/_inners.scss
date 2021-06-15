@@ -1,16 +1,13 @@
 .inner {
-    max-width: 1000px;
+  max-width: 1000px;
 }
 
 .inner-flex {
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-}
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
 
-/*---------------------------------------*/
-@media (min-width: 600px) {
-    .inner-flex {
-        flex-direction: row;
-    }
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
 }

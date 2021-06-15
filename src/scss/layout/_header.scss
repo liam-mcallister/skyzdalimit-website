@@ -14,12 +14,62 @@
   padding: 0 1rem;
   text-align: center;
 
-  @include headerImage(
-    linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)),
-    url(../../images/header/home-header.jpg)
-  );
+  background: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)),
+    url(../../images/header/home-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   & p {
     margin-bottom: 2rem;
   }
 }
+
+/*----------------------------------------------*/
+.header-about {
+  @include ColorHeader(
+    linear-gradient(rgba(179, 169, 33, 0.6), rgba(179, 169, 33, 0.6)),
+    url(../../images/header/home-header.jpg)
+  );
+}
+
+/*----------------------------------------------*/
+.header-productions {
+  @include ColorHeader(
+    linear-gradient(rgba(150, 33, 179, 0.6), rgba(150, 33, 179, 0.6)),
+    url(../../images/header/home-header.jpg)
+  );
+}
+
+/*----------------------------------------------*/
+.header-patrons {
+  @include ColorHeader(
+    linear-gradient(rgba(57, 179, 33, 0.6), rgba(57, 179, 33, 0.6)),
+    url(../../images/header/home-header.jpg)
+  );
+}
+
+/*----------------------------------------------*/
+.header-volunteering {
+  @include ColorHeader(
+    linear-gradient(rgba(179, 33, 33, 0.6), rgba(179, 33, 33, 0.6)),
+    url(../../images/header/home-header.jpg)
+  );
+}
+
+/*----------------------------------------------*/
+.header-contact {
+  @include ColorHeader(
+    linear-gradient(rgba(33, 67, 179, 0.6), rgba(33, 67, 179, 0.6)),
+    url(../../images/header/home-header.jpg)
+  );
+}
+
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/

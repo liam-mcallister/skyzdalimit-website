@@ -1,0 +1,80 @@
+@use "abstracts/variables" as *;
+
+.cast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  color: $secondary-color;
+}
+
+.cast__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*----------------------------------------------------*/
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.work__title {
+  width: 100%;
+  padding: 2rem;
+  background: $primary-color;
+  color: $white;
+}
+
+.work__one {
+  width: 100%;
+  padding: 2rem;
+  background: $attention-color;
+  color: black;
+}
+
+.work__two {
+  width: 100%;
+  padding: 2rem;
+  background: $secondary-color;
+  color: $white;
+}
+
+.work__three {
+  width: 100%;
+  padding: 2rem;
+  background: $white;
+  color: black;
+}
+
+/*----------------------------------------------------*/
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+  background: $primary-color;
+
+  & p {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

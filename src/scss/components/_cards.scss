@@ -1,90 +1,106 @@
 @use "abstracts/variables" as *;
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-bottom: 2rem;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0;
 }
 
 .cards__item {
-    display: flex;
-    padding: 1rem;
+  display: flex;
+  padding: 1rem;
+
+  @media (min-width: 40rem) {
+    width: 50%;
+  }
+
+  @media (min-width: 56rem) {
+    width: 33.3333%;
+  }
+
+  @media (min-width: 75rem) {
+    width: 25%;
+  }
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background: $secondary-color;
-    color: $white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: $secondary-color;
+  color: $white;
 
-    & img {
-        width: 100%;
-        height: auto;
-    }
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .card__content {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    padding: 1rem;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
 
-    & a {
-        text-align: center;
-    }
+  & a {
+    text-align: center;
+  }
 }
 
 .card__title {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .card__text {
-    flex: 1 1 auto;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
 }
 
 /*-----------------------------------*/
 .card-circle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    padding: 1rem;
-    border-radius: 50%;
-    text-align: center;
-    background: $white;
-    color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  background: $white;
+  color: $secondary-color;
 
-    & h2 {
-        margin-bottom: 1rem;
-    }
+  & h2 {
+    margin-bottom: 1rem;
+  }
 
-    & p {
-        color: #232323;
-    }
+  & p {
+    color: #232323;
+  }
 }
 
-.cards__item {
-    @media (min-width: 40rem) {
-        width: 50%;
-    }
+/*-----------------------------------*/
+.card-patron {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: $primary-color;
+  color: $white;
 
-    @media (min-width: 56rem) {
-        width: 33.3333%;
-    }
+  & img {
+    width: 100%;
+    height: auto;
+  }
 
-    @media (min-width: 75rem) {
-        width: 25%;
-    }
+  @media (min-width: 900px) {
+    flex-direction: row;
+  }
 }

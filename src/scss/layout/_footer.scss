@@ -4,64 +4,96 @@
 @use "abstracts/variables" as *;
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 3rem 1rem;
-    background: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  background: $secondary-color;
 
-    & a {
-        color: $white;
-    }
+  & a {
+    color: $white;
+  }
+
+  @media (min-width: 600px) {
+    justify-content: space-between;
+  }
 }
 
-.footer__top {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 2rem 0;
+  padding: 0 0 2rem 0;
+  border-bottom: 1px solid $white;
+
+  & div:first-child {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 600px) {
     margin: 0 2rem 0 0;
     padding: 0 2rem 0 0;
     border-right: 1px solid $white;
+    border-bottom: none;
+  }
+}
+
+.footer__links {
+  padding: 0.25rem 0;
 }
 
 .site-map {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
 
-    & :last-child {
-        margin-right: 0;
-    }
+  & li:last-child {
+    margin-right: 0;
+  }
 
-    & :last-child::after {
-        content: "";
-        margin-left: 0;
-    }
-}
-
-.footer__bottom {
-    padding: 0.25rem 0;
+  & li:last-child::after {
+    content: "";
+    margin-left: 0;
+  }
 }
 
 .footer-item {
-    margin-right: 1rem;
+  margin-right: 1rem;
 
-    &::after {
-        content: "|";
-        margin-left: 1rem;
+  & a {
+    transition: color 0.25s linear;
+
+    &:hover {
+      color: $attention-color;
     }
+  }
+
+  &::after {
+    content: "|";
+    margin-left: 1rem;
+  }
+}
+
+.footer-copyright {
+  margin-bottom: 1rem;
+
+  & a {
+    text-transform: capitalize;
+    color: $attention-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer-icons {
-    margin-top: 0.25rem;
-}
+  margin-top: 0.25rem;
 
-/*---------------------------------------------*/
-@media (min-width: 600px) {
-    footer {
-        display: flex;
-        justify-content: space-between;
-    }
+  & a {
+    margin-right: 0.5rem;
+  }
 }
