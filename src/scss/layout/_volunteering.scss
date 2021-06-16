@@ -1,0 +1,21 @@
+@use "abstracts/variables" as *;
+
+.volunteering-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  color: $secondary-color;
+
+  & p {
+    margin-bottom: 1rem;
+    color: black;
+  }
+}
+
+.volunteering-content {
+  @media (min-width: 700px) {
+    padding-left: 2rem;
+  }
+}

@@ -1,0 +1,27 @@
+@use "abstracts/variables" as *;
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 2rem;
+}
+
+.contact-info {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: $primary-color;
+
+  @media (min-width: 900px) {
+    display: flex;
+    justify-content: center;
+
+    & p {
+      margin-right: 3rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
