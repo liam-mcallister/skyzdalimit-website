@@ -8,20 +8,49 @@
 }
 
 .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem 1rem;
   text-align: center;
   background: $primary-color;
 
+  & p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  & p::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+    background-image: url(../../images/icons/phone.svg);
+  }
+
   @media (min-width: 900px) {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 
     & p {
       margin-right: 3rem;
+      margin-bottom: 0;
 
       &:last-child {
         margin-right: 0;
       }
     }
   }
+}
+
+/*------------------------------------*/
+.map {
+  height: 30rem;
 }
