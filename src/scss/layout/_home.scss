@@ -9,6 +9,23 @@
     color: $secondary-color;
 }
 
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    padding-bottom: 3rem;
+    color: $secondary-color;
+
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1000px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .mission {
     display: flex;
     flex-direction: column;
@@ -19,8 +36,14 @@
     text-align: center;
     background: $primary-color;
 
-    & p {
+    & p,
+    ul {
         margin-bottom: 2rem;
+    }
+
+    & li {
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
     }
 }
 
