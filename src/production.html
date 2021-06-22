@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skyzdalimit Home Page</title>
-    <link rel="stylesheet" href="../node_modules/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="../node_modules/baguettebox.js/dist/baguetteBox.min.css">
     <link rel="stylesheet" href="scss/styles.scss">
 </head>
 
@@ -132,26 +132,25 @@
         </div>
     </section>
 
-    <section class="img-gallery">
-        <a href="../images/patrons/patron.jpg" class="glightbox" data-type="image" data-effect="fade" data-width="900px"
-            data-height="auto" data-zoomable="true" data-draggable="true">
-            <img src="../images/patrons/patron.jpg" alt="image" /></a>
-
-        <a href="../images/patrons/patron.jpg" data-type="image" data-effect="fade" data-width="900px"
-            data-height="auto" data-zoomable="true" data-draggable="true">
-            <img src="../images/patrons/patron.jpg" alt="image" /></a>
-
-        <a href="../images/header/home-header.jpg" data-type="image" data-effect="fade" data-width="900px"
-            data-height="auto" data-zoomable="true" data-draggable="true">
-            <img src="../images/header/home-header.jpg" alt="image" /></a>
-
-        <a href="../images/patrons/patron.jpg" data-type="image" data-effect="fade" data-width="900px"
-            data-height="auto" data-zoomable="true" data-draggable="true">
-            <img src="../images/patrons/patron.jpg" alt="image" /></a>
-
-        <a href="../images/patrons/patron.jpg" data-type="image" data-effect="fade" data-width="900px"
-            data-height="auto" data-zoomable="true" data-draggable="true">
-            <img src="../images/patrons/patron.jpg" alt="image" /></a>
+    <section class="gallery">
+        <a href="../images/patrons/patron.jpg">
+            <img src="../images/patrons/patron.jpg" alt="image" />
+        </a>
+        <a href="../images/patrons/patron.jpg">
+            <img src="../images/patrons/patron.jpg" alt="image" />
+        </a>
+        <a href="../images/header/home-header.jpg">
+            <img src="../images/header/home-header.jpg" alt="image" />
+        </a>
+        <a href="../images/patrons/patron.jpg">
+            <img src="../images/patrons/patron.jpg" alt="image" />
+        </a>
+        <a href="../images/header/home-header.jpg">
+            <img src="../images/header/home-header.jpg" alt="image" />
+        </a>
+        <a href="../images/patrons/patron.jpg">
+            <img src="../images/patrons/patron.jpg" alt="image" />
+        </a>
     </section>
 
 
@@ -303,7 +302,13 @@
         </div>
     </footer>
 
-    <script src="../node_modules/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="../node_modules/baguettebox.js/dist/baguetteBox.min.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            baguetteBox.run('.gallery');
+        });
+    </script>
+
     <script src="js/app.js"></script>
 </body>
 

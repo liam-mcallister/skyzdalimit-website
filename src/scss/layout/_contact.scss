@@ -16,22 +16,11 @@
   background: $primary-color;
 
   & p {
-    display: flex;
-    align-items: center;
     margin-bottom: 2rem;
 
     &:last-child {
       margin-bottom: 0;
     }
-  }
-
-  & p::before {
-    content: "";
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.5rem;
-    background-image: url(../../images/icons/phone.svg);
   }
 
   @media (min-width: 900px) {
@@ -48,6 +37,11 @@
       }
     }
   }
+}
+
+.contact-icon {
+  width: 2rem;
+  height: 2rem;
 }
 
 /*------------------------------------*/

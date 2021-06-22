@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skyzdalimit Home Page</title>
+    <title>Contact Us | Skyzdalimit</title>
     <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="scss/styles.scss">
 </head>
@@ -44,26 +44,37 @@
         <form action="">
             <div class="form__inputs">
                 <div class="form__name">
-                    <label for="name">Name:</label>
+                    <label class="form-label" for="name">Name:</label>
                     <input class="form-input" id="name" type="text" />
                 </div>
                 <div class="form__email">
-                    <label for="email">Email:</label>
+                    <label class="form-label" for="email">Email:</label>
                     <input class="form-input" id="email" type="email" />
                 </div>
             </div>
             <div class="form__msg">
-                <label for="msg">Message:</label>
+                <label class="form-label" for="msg">Message:</label>
                 <textarea name="msg" id="msg"></textarea>
             </div>
-            <button class="btn" type="submit">Submit</button>
+            <div class="form__submit">
+                <button class="btn" type="submit">Submit</button>
+            </div>
         </form>
     </section>
 
     <section class="contact-info">
-        <p>skyzdalimitclub@gmail.com</p>
-        <p>072 4349 6441</p>
-        <p>22 Knocksilla Park, Omagh, BT79 0JR</p>
+        <div class="contact-info__email">
+            <img class="contact-icon" src="../images/icons/email.svg" alt="">
+            <p>skyzdalimitclub@gmail.com</p>
+        </div>
+        <div class="contact__info__phone">
+            <img class="contact-icon" src="../images/icons/email.svg" alt="">
+            <p>072 4349 6441</p>
+        </div>
+        <div class="contact__info__address">
+            <img class="contact-icon" src="../images/icons/email.svg" alt="">
+            <p>22 Knocksilla Park, Omagh, BT79 0JR</p>
+        </div>
     </section>
 
     <section id="mapid" class="map"></section>
