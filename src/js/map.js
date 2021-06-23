@@ -24,3 +24,5 @@ const blueIcon = new L.Icon({
 });
 
 L.marker([54.59808, -7.28408], { icon: blueIcon }).addTo(myMap);
+
+myMap.scrollWheelZoom.disable();

@@ -39,9 +39,24 @@
   }
 }
 
-.contact-icon {
-  width: 2rem;
-  height: 2rem;
+.contact-info__email,
+.contact-info__phone {
+  margin-bottom: 2rem;
+}
+
+.contact-info__email,
+.contact-info__phone,
+.contact-info__address {
+  @media (min-width: 900px) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 2rem;
+
+    & img {
+      margin-right: 1rem;
+    }
+  }
 }
 
 /*------------------------------------*/
