@@ -1,94 +1,108 @@
 @use "abstracts/variables" as *;
 
 .whats-on {
+  width: 100%;
+  border-top: 6px solid $attention-color;
+  color: $secondary-color;
+
+  @media (min-width: 800px) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 3rem 1rem;
-    color: $secondary-color;
+  }
 }
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    max-width: 1200px;
-    padding-bottom: 3rem;
-    color: $secondary-color;
+.whats-on__img {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  background: url(../../images/shows/africa/africa1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    @media (min-width: 600px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: red;
+  }
+}
 
-    @media (min-width: 1000px) {
-        grid-template-columns: repeat(4, 1fr);
-    }
+.whats-on__content {
+  padding: 2rem;
+  background: $secondary-color;
+  color: $white;
+
+  & p {
+    margin-bottom: 1rem;
+  }
 }
 
 .mission {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 3rem 1rem;
-    text-align: center;
-    background: $primary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+  background: $primary-color;
 
-    & p,
-    ul {
-        margin-bottom: 2rem;
-    }
+  & p,
+  ul {
+    margin-bottom: 2rem;
+  }
 
-    & li {
-        margin-bottom: 1rem;
-        line-height: 1.5rem;
-    }
+  & li {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .stats {
-    width: 100%;
-    padding: 5rem 1rem;
+  width: 100%;
+  padding: 5rem 1rem;
 
-    background-image: linear-gradient(
-            rgba(12, 12, 12, 0.6),
-            rgba(12, 12, 12, 0.6)
-        ),
-        url(../../images/backgrounds/stats-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: linear-gradient(
+      rgba(12, 12, 12, 0.6),
+      rgba(12, 12, 12, 0.6)
+    ),
+    url(../../images/backgrounds/stats-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .stats__top {
-    display: flex;
-    justify-content: center;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 .stats__middle {
-    @extend .stats__top;
+  @extend .stats__top;
 }
 
 .stats__bottom {
-    @extend .stats__top;
-    margin-bottom: 0;
+  @extend .stats__top;
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------*/
 @media (min-width: 500px) {
-    .stats__top {
-        justify-content: flex-start;
-    }
+  .stats__top {
+    justify-content: flex-start;
+  }
 
-    .stats__middle {
-        justify-content: center;
-    }
+  .stats__middle {
+    justify-content: center;
+  }
 
-    .stats__bottom {
-        justify-content: flex-end;
-    }
+  .stats__bottom {
+    justify-content: flex-end;
+  }
 }
