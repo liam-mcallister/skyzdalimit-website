@@ -1,5 +1,19 @@
 @use "abstracts/variables" as *;
 
+.volunteers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  color: $secondary-color;
+
+  & h2 {
+    text-align: center;
+  }
+}
+
+/*----------------------------------------------------*/
 .volunteering-info {
   display: flex;
   flex-direction: column;

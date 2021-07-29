@@ -91,3 +91,21 @@
   background: linear-gradient($primary-color, $secondary-color);
   color: $white;
 }
+
+/*-----------------------------------*/
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  color: $secondary-color;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
