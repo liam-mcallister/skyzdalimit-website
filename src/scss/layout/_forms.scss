@@ -1,30 +1,24 @@
 @use "../abstracts/variables" as *;
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Default Form
+2. Default Labels/Inputs
+3. Form Inputs Section
+4. Form Submit Section
+
+*/
+
+/*-------------------------------1. Default Form----*/
 form {
   width: 100%;
   max-width: 1000px;
   color: black;
 }
 
-.form__inputs {
-  @media (min-width: 600px) {
-    display: flex;
-  }
-}
-
-.form__name {
-  @media (min-width: 600px) {
-    flex-grow: 1;
-    margin-right: 3rem;
-  }
-}
-
-.form__email {
-  @media (min-width: 600px) {
-    flex-grow: 1;
-  }
-}
-
+/*----------------------2. Default Labels/Inputs----*/
 .form-label {
   display: block;
   margin-bottom: 0.5rem;
@@ -46,6 +40,27 @@ textarea {
   box-shadow: 1px 1px 33px 4px rgba(0, 0, 0, 0.39);
 }
 
+/*------------------------3. Form Inputs Section----*/
+.form__inputs {
+  @media (min-width: 600px) {
+    display: flex;
+  }
+}
+
+.form__name {
+  @media (min-width: 600px) {
+    flex-grow: 1;
+    margin-right: 3rem;
+  }
+}
+
+.form__email {
+  @media (min-width: 600px) {
+    flex-grow: 1;
+  }
+}
+
+/*------------------------4. Form Submit Section----*/
 .form__submit {
   display: flex;
   justify-content: center;

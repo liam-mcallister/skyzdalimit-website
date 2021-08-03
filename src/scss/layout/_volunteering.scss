@@ -1,5 +1,15 @@
 @use "../abstracts/variables" as *;
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Volunteers Section
+2. Volunteering Info Section
+
+*/
+
+/*-------------------------1. Volunteers Section----*/
 .volunteers {
   display: flex;
   flex-direction: column;
@@ -13,7 +23,7 @@
   }
 }
 
-/*----------------------------------------------------*/
+/*------------------2. Volunteering Info Section----*/
 .volunteering-info {
   display: flex;
   flex-direction: column;

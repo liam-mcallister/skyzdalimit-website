@@ -1,77 +1,88 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
-@use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Home Header
+2. About Header
+3. Productions Header
+4. Patrons Header
+5. Volunteering Header
+6. Contact Header
+
+*/
+
+/*--------------------------------1. Home Header----*/
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100vh - 64px);
-    padding: 0 1rem;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 64px);
+  padding: 0 1rem;
+  text-align: center;
 
-    background: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)),
-        url(../../images/header/home-header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)),
+    url(../../images/header/home-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    & p {
-        margin-bottom: 2rem;
-    }
+  & p {
+    margin-bottom: 2rem;
+  }
 }
 
-/*----------------------------------------------*/
+/*-------------------------------2. About Header----*/
 .header-about {
-    @include ColorHeader(
-        linear-gradient(rgba(179, 169, 33, 0.6), rgba(179, 169, 33, 0.6)),
-        url(../../images/header/about-header.jpg)
-    );
+  @include ColorHeader(
+    linear-gradient(rgba(179, 169, 33, 0.6), rgba(179, 169, 33, 0.6)),
+    url(../../images/header/about-header.jpg)
+  );
 }
 
-/*----------------------------------------------*/
+/*-------------------------3. Productions Header----*/
 .header-productions {
-    @include ColorHeader(
-        linear-gradient(rgba(150, 33, 179, 0.6), rgba(150, 33, 179, 0.6)),
-        url(../../images/header/productions-header.jpg)
-    );
+  @include ColorHeader(
+    linear-gradient(rgba(150, 33, 179, 0.6), rgba(150, 33, 179, 0.6)),
+    url(../../images/header/productions-header.jpg)
+  );
 }
 
-/*----------------------------------------------*/
+/*-----------------------------4. Patrons Header----*/
 .header-patrons {
-    @include ColorHeader(
-        linear-gradient(rgba(57, 179, 33, 0.6), rgba(57, 179, 33, 0.6)),
-        url(../../images/header/patrons-header.jpg)
-    );
+  @include ColorHeader(
+    linear-gradient(rgba(57, 179, 33, 0.6), rgba(57, 179, 33, 0.6)),
+    url(../../images/header/patrons-header.jpg)
+  );
 }
 
-/*----------------------------------------------*/
+/*------------------------5. Volunteering Header----*/
 .header-volunteering {
-    @include ColorHeader(
-        linear-gradient(rgba(179, 33, 33, 0.6), rgba(179, 33, 33, 0.6)),
-        url(../../images/header/volunteering-header.jpg)
-    );
+  @include ColorHeader(
+    linear-gradient(rgba(179, 33, 33, 0.6), rgba(179, 33, 33, 0.6)),
+    url(../../images/header/volunteering-header.jpg)
+  );
 }
 
-/*----------------------------------------------*/
+/*-----------------------------6. Contact Header----*/
 .header-contact {
-    @include ColorHeader(
-        linear-gradient(rgba(33, 67, 179, 0.6), rgba(33, 67, 179, 0.6)),
-        url(../../images/header/contact-header.jpg)
-    );
+  @include ColorHeader(
+    linear-gradient(rgba(33, 67, 179, 0.6), rgba(33, 67, 179, 0.6)),
+    url(../../images/header/contact-header.jpg)
+  );
 }
 
 /*----------------------------------------------*/
 .header-production {
-    width: 100%;
+  width: 100%;
 
-    & video {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
+  & video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }

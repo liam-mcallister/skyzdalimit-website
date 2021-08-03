@@ -1,5 +1,15 @@
 @use "../abstracts/variables" as *;
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Default Icon
+2. Contact Icon
+
+*/
+
+/*-------------------------------1. Default Icon----*/
 .icon {
   width: 3rem;
   height: 3rem;
@@ -14,6 +24,7 @@
   }
 }
 
+/*-------------------------------2. Contact Icon----*/
 .contact-icon {
   width: 2rem;
   height: 2rem;

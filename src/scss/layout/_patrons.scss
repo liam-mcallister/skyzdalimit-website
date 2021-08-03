@@ -1,15 +1,24 @@
 @use "../abstracts/variables" as *;
 
-.patrons {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    max-width: 1200px;
-    margin: auto;
-    padding: 3rem 1rem;
-    color: $secondary-color;
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
 
-    @media (min-width: 600px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+1. Patrons Section
+
+*/
+
+/*----------------------------1. Patrons Section----*/
+.patrons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem;
+  color: $secondary-color;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
   }
+}

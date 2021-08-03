@@ -1,0 +1,34 @@
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Glider Contain
+2. Glider
+3. Glider Arrows
+4. Glider Prev/Next Buttons
+
+*/
+
+/*-----------------------------1. Glider Contain----*/
+.glider-contain {
+  max-width: 1000px;
+}
+
+/*-------------------------------------2. Glider----*/
+.glider {
+  overflow: hidden;
+}
+
+/*------------------------------3. Glider Arrows----*/
+.glider-arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/*-------------------4. Glider Prev/Next Buttons----*/
+.glider-prev,
+.glider-next {
+  position: relative;
+  left: unset;
+}

@@ -1,8 +1,15 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
-// -----------------------------------------------------------------------------
 @use "variables" as *;
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Colored Headers
+2. Show Card Backgrounds
+
+*/
+
+/*----------------------------1. Colored Headers----*/
 @mixin ColorHeader($imgGrad, $bgImg) {
   display: flex;
   flex-direction: column;
@@ -42,3 +49,5 @@
     }
   }
 }
+
+/*----------------------2. Show Card Backgrounds----*/

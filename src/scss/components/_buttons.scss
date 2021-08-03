@@ -1,96 +1,104 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
 @use "../abstracts/variables" as *;
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Default Button
+2. Card Button
+3. Burger Button
+
+*/
+
+/*-----------------------------1. Default Button----*/
 button {
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: $secondary-color;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $secondary-color;
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.75rem 2.5rem;
-    border-radius: 1.5rem;
-    font-weight: 700;
-    cursor: pointer;
-    background: $attention-color;
-    transition: background-color 0.25s linear, color 0.25s linear;
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: $attention-color;
+  transition: background-color 0.25s linear, color 0.25s linear;
 
-    &:hover {
-        background-color: $secondary-color;
-        color: $white;
-    }
+  &:hover {
+    background-color: $secondary-color;
+    color: $white;
+  }
 }
 
-/*----------------------------------------------*/
+/*--------------------------------2. Card Button----*/
 .btn--card:hover {
-    background: $white;
-    color: $secondary-color;
+  background: $white;
+  color: $secondary-color;
 }
 
-/*----------------------------------------------*/
+/*------------------------------3. Burger Button----*/
 .burger-btn {
-    display: block;
-    z-index: 100;
-    position: absolute;
-    right: 32px;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
+  display: block;
+  z-index: 100;
+  position: absolute;
+  right: 32px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: none;
+  appearance: none;
+
+  &:focus,
+  &:active,
+  &:hover {
     border: none;
-    appearance: none;
+    outline: none;
+  }
 
-    &:focus,
-    &:active,
-    &:hover {
-        border: none;
-        outline: none;
-    }
+  &:checked + .burger-label .top {
+    transform: rotate(-45deg);
+    margin-top: 15px;
+  }
 
-    &:checked + .burger-label .top {
-        transform: rotate(-45deg);
-        margin-top: 15px;
-    }
+  &:checked + .burger-label .middle {
+    transform: rotate(45deg);
+    margin-top: -8px;
+  }
 
-    &:checked + .burger-label .middle {
-        transform: rotate(45deg);
-        margin-top: -8px;
-    }
+  &:checked + .burger-label .bottom {
+    opacity: 0;
+  }
 
-    &:checked + .burger-label .bottom {
-        opacity: 0;
-    }
+  &:checked + .burger-label + .navbar__nav {
+    transform: translateY(100vh);
+  }
 
-    &:checked + .burger-label + .navbar__nav {
-        transform: translateY(100vh);
-    }
-
-    @media (min-width: 991px) {
-        display: none;
-    }
+  @media (min-width: 991px) {
+    display: none;
+  }
 }
 
 .burger-label {
-    background-color: transparent;
-    cursor: pointer;
-    z-index: 100;
-    position: absolute;
-    right: 35px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  right: 35px;
 
-    @media (min-width: 991px) {
-        display: none;
-    }
+  @media (min-width: 991px) {
+    display: none;
+  }
 }
 
 .bar {
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    background-color: $white;
-    transition: all 0.1s ease-in-out;
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: $white;
+  transition: all 0.1s ease-in-out;
 }

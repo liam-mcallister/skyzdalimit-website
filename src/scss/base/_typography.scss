@@ -1,12 +1,21 @@
-/**
- * Basic typography style for copy text
- */
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
 
+1. Body
+2. Headers
+3. Paragraphs
+4. Navbar Logo
+
+*/
+
+/*---------------------------------------1. Body----*/
 body {
   font-family: Roboto;
   font-size: 16px;
 }
 
+/*------------------------------------2. Headers----*/
 h1 {
   font-family: RobotoBold;
   margin-bottom: 2rem;
@@ -32,10 +41,12 @@ h3 {
   font-size: 1.5rem;
 }
 
+/*---------------------------------3. Paragraphs----*/
 p {
   line-height: 1.5rem;
 }
 
+/*--------------------------------4. Navbar Logo----*/
 .navbar-logo {
   font-family: SheldonFeather;
   font-size: 3rem;

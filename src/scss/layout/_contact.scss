@@ -1,5 +1,16 @@
 @use "../abstracts/variables" as *;
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Contact Form Section
+2. Contact Info Section
+3. Map Section
+
+*/
+
+/*-----------------------1. Contact Form Section----*/
 .contact-form {
   display: flex;
   justify-content: center;
@@ -7,6 +18,7 @@
   padding: 5rem 2rem;
 }
 
+/*-----------------------2. Contact Info Section----*/
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -59,7 +71,7 @@
   }
 }
 
-/*------------------------------------*/
+/*--------------------------------3. Map Section----*/
 .map {
   height: 30rem;
 }

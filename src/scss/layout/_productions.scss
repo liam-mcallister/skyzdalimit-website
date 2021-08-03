@@ -1,6 +1,23 @@
 @use "../abstracts/variables" as *;
 
-/*--------------------------------------------*/
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Shows Section
+2. Gallery Section
+
+*/
+
+/*------------------------------1. Shows Section----*/
+.shows {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+/*----------------------------2. Gallery Section----*/
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

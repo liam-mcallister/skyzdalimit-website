@@ -1,20 +1,30 @@
-// -----------------------------------------------------------------------------
-// This file contains all @font-face declarations, if any.
-// -----------------------------------------------------------------------------
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Sheldon Feather
+2. Roboto
+3. Roboto Bold
+
+*/
+
+/*----------------------------1. Sheldon Feather----*/
 @font-face {
   font-family: SheldonFeather;
-  src: url("../fonts/SheldonFeather.woff2") format("woff2"),
-    url("../fonts/SheldonFeather.woff") format("woff");
+  src: url("../../fonts/SheldonFeather.woff2") format("woff2"),
+    url("../../fonts/SheldonFeather.woff") format("woff");
 }
 
+/*-------------------------------------2. Roboto----*/
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
-    url("../fonts/Roboto-Regular.woff") format("woff");
+  src: url("../../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../../fonts/Roboto-Regular.woff") format("woff");
 }
 
+/*--------------------------------3. Roboto Bold----*/
 @font-face {
   font-family: RobotoBold;
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
-    url("../fonts/Roboto-Bold.woff") format("woff");
+  src: url("../../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../../fonts/Roboto-Bold.woff") format("woff");
 }

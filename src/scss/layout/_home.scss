@@ -1,35 +1,50 @@
 @use "../abstracts/variables" as *;
 
-.whats-on {
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Coming Soon Section
+2. Our Mission Section
+3. Stats Section
+
+*/
+
+/*------------------------1. Coming Soon Section----*/
+.coming-soon {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  background: $secondary-color;
 
-  background: linear-gradient(
-      90deg,
-      rgb(15, 112, 186) 25%,
-      rgba(15, 112, 186, 0.8) 89%
-    ),
-    url(../../images/shows/africa/africa1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-width: 800px) {
-    display: flex;
+  @media (min-width: 500px) {
+    flex-direction: row;
   }
 }
 
-.whats-on__content {
-  padding: 2rem;
+.coming-soon__info {
+  width: 100%;
+  padding: 1rem;
 
   & p {
     margin-bottom: 1rem;
   }
+}
 
-  @media (min-width: 800px) {
-    width: 50%;
+.coming-soon__img {
+  width: 100%;
+  height: 200px;
+  background-image: url(../../images/backgrounds/stats-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: 500px) {
+    height: auto;
   }
 }
 
+/*------------------------2. Our Mission Section----*/
 .mission {
   display: flex;
   flex-direction: column;
@@ -51,6 +66,7 @@
   }
 }
 
+/*------------------------------3. Stats Section----*/
 .stats {
   width: 100%;
   padding: 5rem 1rem;
@@ -71,28 +87,25 @@
   max-width: 1000px;
   margin: auto;
   margin-bottom: 2rem;
+
+  @media (min-width: 500px) {
+    justify-content: flex-start;
+  }
 }
 
 .stats__middle {
   @extend .stats__top;
+
+  @media (min-width: 500px) {
+    justify-content: center;
+  }
 }
 
 .stats__bottom {
   @extend .stats__top;
   margin-bottom: 0;
-}
 
-/*--------------------------------------------------*/
-@media (min-width: 500px) {
-  .stats__top {
-    justify-content: flex-start;
-  }
-
-  .stats__middle {
-    justify-content: center;
-  }
-
-  .stats__bottom {
+  @media (min-width: 500px) {
     justify-content: flex-end;
   }
 }

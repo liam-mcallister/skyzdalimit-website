@@ -1,34 +1,47 @@
 @use "../abstracts/variables" as *;
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. 404 Body
+2. 404 Section
+3. 404 Image
+
+*/
+
+/*-----------------------------------1. 404 Body----*/
 .body-404 {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
+/*--------------------------------2. 404 Section----*/
 .error-404 {
-    min-width: 100%;
-    min-height: 100vh;
-    padding: 2rem;
-    background: $primary-color;
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background: $primary-color;
 
-    & p {
-        margin-bottom: 1rem;
-    }
+  & p {
+    margin-bottom: 1rem;
+  }
 
-    @media (min-width: 700px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  @media (min-width: 700px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
+/*----------------------------------3. 404 Image----*/
 .img-404 {
-    max-width: 800px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 4rem;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
 
-    @media (min-width: 700px) {
-        margin-right: 3rem;
-        margin-bottom: 0;
-    }
+  @media (min-width: 700px) {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
 }

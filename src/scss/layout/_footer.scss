@@ -1,8 +1,19 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
 @use "../abstracts/variables" as *;
 
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Footer Section
+2. Contact Info
+3. Footer Links
+4. Site Map
+5. Copyright Info
+6. Footer Social Icons
+
+*/
+
+/*-----------------------------1. Footer Section----*/
 footer {
   display: flex;
   flex-direction: column;
@@ -21,6 +32,7 @@ footer {
   }
 }
 
+/*-------------------------------2. Contact Info----*/
 .footer__contact {
   display: flex;
   flex-direction: column;
@@ -41,10 +53,12 @@ footer {
   }
 }
 
+/*-------------------------------3. Footer Links----*/
 .footer__links {
   padding: 0.25rem 0;
 }
 
+/*-----------------------------------4. Site Map----*/
 .site-map {
   display: flex;
   flex-wrap: wrap;
@@ -77,6 +91,7 @@ footer {
   }
 }
 
+/*-----------------------------5. Copyright Info----*/
 .footer-copyright {
   margin-bottom: 1rem;
 
@@ -90,6 +105,7 @@ footer {
   }
 }
 
+/*------------------------6. Footer Social Icons----*/
 .footer-icons {
   margin-top: 0.25rem;
 
