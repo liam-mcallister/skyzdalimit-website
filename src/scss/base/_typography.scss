@@ -6,6 +6,7 @@
 2. Headers
 3. Paragraphs
 4. Navbar Logo
+5. Header Text
 
 */
 
@@ -50,4 +51,11 @@ p {
 .navbar-logo {
   font-family: SheldonFeather;
   font-size: 3rem;
+}
+
+/*--------------------------------5. Header Text----*/
+.header-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
 }
