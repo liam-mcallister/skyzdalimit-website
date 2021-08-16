@@ -31,6 +31,9 @@
 }
 
 .coming-soon__show__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 2rem;
   background: $secondary-color;
   color: $white;
