@@ -11,34 +11,42 @@
 
 /*------------------------------1. Shows Section----*/
 .shows {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 1rem;
 }
 
 /*----------------------------2. Gallery Section----*/
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-  & a:hover {
-    filter: grayscale(100%);
-    transition: filter 0.25s ease;
-  }
+    & a:hover {
+        filter: grayscale(100%);
+        transition: filter 0.25s ease;
+    }
 
-  & img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-  @media (min-width: 600px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-  @media (min-width: 900px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (min-width: 1500px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
