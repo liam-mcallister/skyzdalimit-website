@@ -14,60 +14,60 @@
 
 /*-------------------------------------1. Navbar----*/
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0.5rem 2rem;
-  text-transform: uppercase;
-  background: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    background: $primary-color;
 }
 
 /*--------------------------------2. Navbar Logo----*/
 .navbar-logo {
-  color: $white;
+    color: $white;
 
-  & span {
-    color: $attention-color;
-  }
+    & span {
+        color: $attention-color;
+    }
 }
 
 /*---------------------------------3. Navbar Nav----*/
 .navbar__nav {
-  display: flex;
-  align-items: center;
-
-  @media (max-width: 991px) {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: fixed;
-    background: $primary-color;
-    height: 100vh;
-    width: 100vw;
-    top: -100vh;
-    left: 0px;
-    z-index: 9;
-    transition: transform 0.4s ease-in-out;
-  }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background: $primary-color;
+        height: 100vh;
+        width: 100vw;
+        top: -100vh;
+        left: 0px;
+        z-index: 9;
+        transition: transform 0.4s ease-in-out;
+    }
 }
 
 /*-------------------------------4. Navbar Items----*/
 .nav-item {
-  margin-left: 1rem;
+    margin-left: 1rem;
 
-  @media (max-width: 991px) {
-    margin: 0.75rem 0;
-  }
+    @media (max-width: 1024px) {
+        margin: 0.75rem 0;
+    }
 }
 
 /*-------------------------------5. Navbar Links----*/
 .nav-link {
-  color: $white;
-  transition: color 0.25s linear;
+    color: $white;
+    transition: color 0.25s linear;
 
-  &:hover {
-    color: $attention-color;
-  }
+    &:hover {
+        color: $attention-color;
+    }
 }
