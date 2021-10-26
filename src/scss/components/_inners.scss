@@ -3,6 +3,7 @@
 ------------------------------------------------------
 
 1. Default Inner
+2. Small Inner
 2. Flex Inner
 
 */
@@ -12,7 +13,12 @@
   max-width: 1000px;
 }
 
-/*---------------------------------2. Flex Inner----*/
+/*--------------------------------2. Small Inner----*/
+.inner-small {
+  max-width: 600px;
+}
+
+/*---------------------------------3. Flex Inner----*/
 .inner-flex {
   display: flex;
   flex-direction: column;

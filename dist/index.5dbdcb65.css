@@ -1,0 +1,1637 @@
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Colors
+
+*/
+/*-------------------------------------1. Colors----*/
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Colored Headers
+2. Show Card Year Bubble
+
+*/
+/*----------------------------1. Colored Headers----*/
+/*----------------------2. Show Card Year Bubble----*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Universal
+2. Html
+3. Body
+4. Links
+
+*/
+/*----------------------------------1. Universal----*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/*---------------------------------------2. Html----*/
+html {
+  box-sizing: border-box;
+}
+/*---------------------------------------3. Body----*/
+body {
+  color: #ffffff;
+}
+/*--------------------------------------4. Links----*/
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f71ba;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Sheldon Feather
+2. Roboto
+3. Roboto Bold
+
+*/
+/*----------------------------1. Sheldon Feather----*/
+@font-face {
+  font-family: SheldonFeather;
+  src: url("SheldonFeather.2c052687.woff2") format("woff2"), url("SheldonFeather.01f5e6f7.woff") format("woff");
+}
+/*-------------------------------------2. Roboto----*/
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Regular.3e34d9fe.woff2") format("woff2"), url("Roboto-Regular.045eb377.woff") format("woff");
+}
+/*--------------------------------3. Roboto Bold----*/
+@font-face {
+  font-family: RobotoBold;
+  src: url("Roboto-Bold.087171da.woff2") format("woff2"), url("Roboto-Bold.a8e5866b.woff") format("woff");
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. No Scroll
+
+*/
+/*----------------------------------1. No Scroll----*/
+.no-scroll {
+  overflow: hidden;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Body
+2. Headers
+3. Paragraphs
+4. Navbar Logo
+5. Header Text
+
+*/
+/*---------------------------------------1. Body----*/
+body {
+  font-family: Roboto;
+  font-size: 16px;
+}
+/*------------------------------------2. Headers----*/
+h1, h3, h2 {
+  font-family: RobotoBold;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 500px) {
+  .header__h1 {
+    font-size: 3.5rem;
+  }
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+/*---------------------------------3. Paragraphs----*/
+p {
+  line-height: 1.5rem;
+}
+/*--------------------------------4. Navbar Logo----*/
+.navbar-logo {
+  font-family: SheldonFeather;
+  font-size: 3rem;
+}
+/*--------------------------------5. Header Text----*/
+.header-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Navbar
+2. Navbar Logo
+3. Navbar Nav
+4. Navbar Items
+5. Navbar Links
+
+*/
+/*-------------------------------------1. Navbar----*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  background: #2daae2;
+}
+/*--------------------------------2. Navbar Logo----*/
+.navbar-logo {
+  color: #ffffff;
+}
+.navbar-logo span {
+  color: #feec00;
+}
+/*---------------------------------3. Navbar Nav----*/
+.navbar__nav {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .navbar__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: #2daae2;
+    height: 100vh;
+    width: 100vw;
+    top: -100vh;
+    left: 0px;
+    z-index: 9;
+    transition: transform 0.4s ease-in-out;
+  }
+}
+/*-------------------------------4. Navbar Items----*/
+.nav-item {
+  margin-left: 1rem;
+}
+@media (max-width: 1024px) {
+  .nav-item {
+    margin: 0.75rem 0;
+  }
+}
+/*-------------------------------5. Navbar Links----*/
+.nav-link {
+  color: #ffffff;
+  transition: color 0.25s linear;
+}
+.nav-link:hover {
+  color: #feec00;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Home Header
+2. About Header
+3. Productions Header
+4. Patrons Header
+5. Volunteering Header
+6. Contact Header
+
+*/
+/*--------------------------------1. Home Header----*/
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 64px);
+  padding: 0 1rem;
+  text-align: center;
+  background: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(home-header.3dda7b42.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header p {
+  margin-bottom: 2rem;
+}
+/*-------------------------------2. About Header----*/
+.header-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 45rem;
+  padding: 0 1rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(179, 169, 33, 0.6), rgba(179, 169, 33, 0.6)), url(about-header.875b9f2d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-about::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10%;
+  width: 100%;
+  border-bottom: 50px solid #ffffff;
+  border-left: 100vw solid transparent;
+}
+@media (min-width: 700px) {
+  .header-about::after {
+    border-bottom: 75px solid #ffffff;
+  }
+}
+@media (min-width: 1000px) {
+  .header-about::after {
+    border-bottom: 100px solid #ffffff;
+  }
+}
+@media (min-width: 1400px) {
+  .header-about::after {
+    border-bottom: 125px solid #ffffff;
+  }
+}
+/*-------------------------3. Productions Header----*/
+.header-productions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 45rem;
+  padding: 0 1rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(150, 33, 179, 0.6), rgba(150, 33, 179, 0.6)), url(productions-header.510bb1de.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-productions::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10%;
+  width: 100%;
+  border-bottom: 50px solid #ffffff;
+  border-left: 100vw solid transparent;
+}
+@media (min-width: 700px) {
+  .header-productions::after {
+    border-bottom: 75px solid #ffffff;
+  }
+}
+@media (min-width: 1000px) {
+  .header-productions::after {
+    border-bottom: 100px solid #ffffff;
+  }
+}
+@media (min-width: 1400px) {
+  .header-productions::after {
+    border-bottom: 125px solid #ffffff;
+  }
+}
+/*-----------------------------4. Patrons Header----*/
+.header-patrons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 45rem;
+  padding: 0 1rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(57, 179, 33, 0.6), rgba(57, 179, 33, 0.6)), url(patrons-header.1171384f.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-patrons::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10%;
+  width: 100%;
+  border-bottom: 50px solid #ffffff;
+  border-left: 100vw solid transparent;
+}
+@media (min-width: 700px) {
+  .header-patrons::after {
+    border-bottom: 75px solid #ffffff;
+  }
+}
+@media (min-width: 1000px) {
+  .header-patrons::after {
+    border-bottom: 100px solid #ffffff;
+  }
+}
+@media (min-width: 1400px) {
+  .header-patrons::after {
+    border-bottom: 125px solid #ffffff;
+  }
+}
+/*------------------------5. Volunteering Header----*/
+.header-volunteering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 45rem;
+  padding: 0 1rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(179, 33, 33, 0.6), rgba(179, 33, 33, 0.6)), url(volunteering-header.a1446ac7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-volunteering::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10%;
+  width: 100%;
+  border-bottom: 50px solid #ffffff;
+  border-left: 100vw solid transparent;
+}
+@media (min-width: 700px) {
+  .header-volunteering::after {
+    border-bottom: 75px solid #ffffff;
+  }
+}
+@media (min-width: 1000px) {
+  .header-volunteering::after {
+    border-bottom: 100px solid #ffffff;
+  }
+}
+@media (min-width: 1400px) {
+  .header-volunteering::after {
+    border-bottom: 125px solid #ffffff;
+  }
+}
+/*-----------------------------6. Contact Header----*/
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 45rem;
+  padding: 0 1rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(33, 67, 179, 0.6), rgba(33, 67, 179, 0.6)), url(contact-header.a59c9024.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-contact::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 10%;
+  width: 100%;
+  border-bottom: 50px solid #ffffff;
+  border-left: 100vw solid transparent;
+}
+@media (min-width: 700px) {
+  .header-contact::after {
+    border-bottom: 75px solid #ffffff;
+  }
+}
+@media (min-width: 1000px) {
+  .header-contact::after {
+    border-bottom: 100px solid #ffffff;
+  }
+}
+@media (min-width: 1400px) {
+  .header-contact::after {
+    border-bottom: 125px solid #ffffff;
+  }
+}
+/*----------------------------------------------*/
+.header-production {
+  width: 100%;
+}
+.header-production video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Coming Soon Section
+2. Our Mission Section
+3. Stats Section
+
+*/
+/*------------------------1. Coming Soon Section----*/
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  background: #ffffff;
+  color: #0f71ba;
+}
+.coming-soon__show {
+  max-width: 20rem;
+}
+@media (min-width: 687px) {
+  .coming-soon__show {
+    display: flex;
+    max-width: 50rem;
+  }
+}
+.coming-soon__show__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background: #0f71ba;
+  color: #ffffff;
+}
+@media (min-width: 687px) {
+  .coming-soon__show__info {
+    width: 50%;
+  }
+}
+.coming-soon__show__img img {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 687px) {
+  .coming-soon__show__img {
+    width: 50%;
+  }
+}
+/*------------------------2. Our Mission Section----*/
+.mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #2daae2;
+}
+.mission p,
+.mission ul {
+  margin-bottom: 2rem;
+}
+.mission li {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+/*------------------------------3. Stats Section----*/
+.stats {
+  width: 100%;
+  padding: 5rem 1rem;
+  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(stats-bg.e9d82f77.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.stats__top, .stats__bottom, .stats__middle {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+@media (min-width: 500px) {
+  .stats__top, .stats__bottom, .stats__middle {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 500px) {
+  .stats__middle {
+    justify-content: center;
+  }
+}
+.stats__bottom {
+  margin-bottom: 0;
+}
+@media (min-width: 500px) {
+  .stats__bottom {
+    justify-content: flex-end;
+  }
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Cast Section
+2. Info Section
+3. Work Section
+4. History Section
+
+*/
+/*-------------------------------1. Cast Section----*/
+.cast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  color: #0f71ba;
+}
+.cast h2 {
+  text-align: center;
+}
+/*-------------------------------2. Info Section----*/
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: black;
+}
+.about-info h2 {
+  color: #0f71ba;
+}
+.about-info p {
+  margin-bottom: 1rem;
+}
+.about-info p:last-child {
+  margin-bottom: 0;
+}
+/*-------------------------------3. Work Section----*/
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+.work p {
+  margin-bottom: 1rem;
+}
+.work p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 800px) {
+  .work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+  }
+}
+.work-box {
+  max-width: 30rem;
+}
+.work__title {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  text-align: right;
+  background: #2daae2;
+  color: #ffffff;
+}
+.work__one {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: #feec00;
+  color: black;
+}
+.work__two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: #0f71ba;
+  color: #ffffff;
+}
+.work__three {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  background: #ffffff;
+  color: black;
+}
+.work__three img {
+  width: 100%;
+  height: auto;
+}
+.work__three__text {
+  padding: 2rem;
+}
+/*----------------------------4. History Section----*/
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #2daae2;
+}
+.history span {
+  font-weight: bold;
+  color: #feec00;
+}
+.history p {
+  margin-bottom: 1rem;
+}
+.history p:last-child {
+  margin-bottom: 0;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Shows Section
+2. Gallery Section
+
+*/
+/*------------------------------1. Shows Section----*/
+.shows {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 2rem;
+}
+/*----------------------------2. Gallery Section----*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.gallery a:hover {
+  filter: grayscale(100%);
+  transition: filter 0.25s ease;
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (min-width: 1500px) {
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Patrons Section
+
+*/
+/*----------------------------1. Patrons Section----*/
+.patrons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem;
+  color: #0f71ba;
+}
+@media (min-width: 600px) {
+  .patrons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Volunteers Section
+2. Volunteering Info Section
+
+*/
+/*-------------------------1. Volunteers Section----*/
+.volunteers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  color: #0f71ba;
+}
+.volunteers h2 {
+  text-align: center;
+}
+/*------------------2. Volunteering Info Section----*/
+.volunteering-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  color: #0f71ba;
+}
+.volunteering-info p {
+  margin-bottom: 1rem;
+  color: black;
+}
+@media (min-width: 700px) {
+  .volunteering-content {
+    padding-left: 2rem;
+  }
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Contact Form Section
+2. Contact Info Section
+3. Map Section
+
+*/
+/*-----------------------1. Contact Form Section----*/
+.contact-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 2rem;
+}
+/*-----------------------2. Contact Info Section----*/
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #2daae2;
+}
+.contact-info p {
+  margin-bottom: 2rem;
+}
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 900px) {
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact-info p {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+  .contact-info p:last-child {
+    margin-right: 0;
+  }
+}
+.contact-info__email,
+.contact-info__phone {
+  margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .contact-info__email,
+.contact-info__phone,
+.contact-info__address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+  .contact-info__email img,
+.contact-info__phone img,
+.contact-info__address img {
+    margin-right: 1rem;
+  }
+}
+/*--------------------------------3. Map Section----*/
+.map {
+  height: 30rem;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Donate Banner
+
+*/
+/*------------------------------1. Donate Banner----*/
+.donate-banner {
+  display: block;
+  width: 100%;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #feec00;
+  color: #0f71ba;
+}
+.donate-banner h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.donate-banner :last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 720px) {
+  .donate-banner {
+    display: flex;
+    justify-content: center;
+  }
+  .donate-banner h2 {
+    margin-bottom: 0;
+  }
+  .donate-banner :first-child {
+    margin-right: 1rem;
+  }
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Footer Section
+2. Contact Info
+3. Footer Links
+4. Site Map
+5. Copyright Info
+6. Footer Social Icons
+
+*/
+/*-----------------------------1. Footer Section----*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  background: #0f71ba;
+}
+footer a {
+  color: #ffffff;
+}
+@media (min-width: 600px) {
+  footer {
+    justify-content: space-between;
+  }
+}
+/*-------------------------------2. Contact Info----*/
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 2rem 0;
+  padding: 0 0 2rem 0;
+  border-bottom: 1px solid #ffffff;
+}
+.footer__contact div:first-child {
+  margin-bottom: 1rem;
+}
+@media (min-width: 600px) {
+  .footer__contact {
+    margin: 0 2rem 0 0;
+    padding: 0 2rem 0 0;
+    border-right: 1px solid #ffffff;
+    border-bottom: none;
+  }
+}
+/*-------------------------------3. Footer Links----*/
+.footer__links {
+  padding: 0.25rem 0;
+}
+/*-----------------------------------4. Site Map----*/
+.site-map {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.site-map li:last-child {
+  margin-right: 0;
+}
+.site-map li:last-child::after {
+  content: "";
+  margin-left: 0;
+}
+.footer-item {
+  margin-right: 1rem;
+}
+.footer-item a {
+  transition: color 0.25s linear;
+}
+.footer-item a:hover {
+  color: #feec00;
+}
+.footer-item::after {
+  content: "|";
+  margin-left: 1rem;
+}
+/*-----------------------------5. Copyright Info----*/
+.footer-copyright {
+  margin-bottom: 1rem;
+}
+.footer-copyright a {
+  text-transform: capitalize;
+  color: #feec00;
+}
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+/*------------------------6. Footer Social Buttons----*/
+.footer-buttons {
+  margin-top: 0.25rem;
+}
+.footer-buttons a {
+  margin-right: 0.5rem;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Default Form
+2. Default Labels/Inputs
+3. Form Inputs Section
+4. Form Submit Section
+
+*/
+/*-------------------------------1. Default Form----*/
+form {
+  width: 100%;
+  max-width: 1000px;
+  color: black;
+}
+/*----------------------2. Default Labels/Inputs----*/
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.form-input {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  box-shadow: 1px 1px 33px 4px rgba(0, 0, 0, 0.39);
+}
+textarea {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 2rem;
+  border: none;
+  box-shadow: 1px 1px 33px 4px rgba(0, 0, 0, 0.39);
+}
+/*------------------------3. Form Inputs Section----*/
+@media (min-width: 600px) {
+  .form__inputs {
+    display: flex;
+  }
+}
+@media (min-width: 600px) {
+  .form__name {
+    flex-grow: 1;
+    margin-right: 3rem;
+  }
+}
+@media (min-width: 600px) {
+  .form__email {
+    flex-grow: 1;
+  }
+}
+/*------------------------4. Form Submit Section----*/
+.form__submit {
+  display: flex;
+  justify-content: center;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. 404 Body
+2. 404 Section
+3. 404 Image
+
+*/
+/*-----------------------------------1. 404 Body----*/
+.body-404 {
+  min-height: 100vh;
+}
+/*--------------------------------2. 404 Section----*/
+.error-404 {
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #2daae2;
+}
+.error-404 p {
+  margin-bottom: 1rem;
+}
+@media (min-width: 700px) {
+  .error-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*----------------------------------3. 404 Image----*/
+.img-404 {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+}
+@media (min-width: 700px) {
+  .img-404 {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Default Button
+2. Card Button
+3. Burger Button
+4. Social Buttons
+
+*/
+/*-----------------------------1. Default Button----*/
+button {
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #0f71ba;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #feec00;
+  transition: background-color 0.25s linear, color 0.25s linear;
+}
+.btn:hover {
+  background-color: #0f71ba;
+  color: #ffffff;
+}
+/*--------------------------------2. Card Button----*/
+.btn--card:hover {
+  background: #ffffff;
+  color: #0f71ba;
+}
+/*------------------------------3. Burger Button----*/
+.burger-btn {
+  display: block;
+  z-index: 100;
+  position: absolute;
+  right: 32px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: none;
+  appearance: none;
+}
+.burger-btn:focus, .burger-btn:active, .burger-btn:hover {
+  border: none;
+  outline: none;
+}
+.burger-btn:checked + .burger-label .top {
+  transform: rotate(-45deg);
+  margin-top: 15px;
+}
+.burger-btn:checked + .burger-label .middle {
+  transform: rotate(45deg);
+  margin-top: -8px;
+}
+.burger-btn:checked + .burger-label .bottom {
+  opacity: 0;
+}
+.burger-btn:checked + .burger-label + .navbar__nav {
+  transform: translateY(100vh);
+}
+@media (min-width: 1024px) {
+  .burger-btn {
+    display: none;
+  }
+}
+.burger-label {
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  right: 35px;
+}
+@media (min-width: 1024px) {
+  .burger-label {
+    display: none;
+  }
+}
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  transition: all 0.1s ease-in-out;
+}
+/*-----------------------------4. Social Buttons----*/
+.btn--social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  padding: 0.75rem 1rem;
+  background: #ffffff;
+  color: #4267B2;
+}
+.btn--social:hover {
+  background: #ffffff;
+  color: #4267B2;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Default Inner
+2. Small Inner
+2. Flex Inner
+
+*/
+/*------------------------------1. Default Inner----*/
+.inner {
+  max-width: 1000px;
+}
+/*--------------------------------2. Small Inner----*/
+.inner-small {
+  max-width: 600px;
+}
+/*---------------------------------3. Flex Inner----*/
+.inner-flex {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+@media (min-width: 600px) {
+  .inner-flex {
+    flex-direction: row;
+  }
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Default Card
+2. Circle Card
+3. Cast Card
+4. Person Card
+5. Show Card
+6. Card Grid
+
+*/
+/*-------------------------------1. Default Card----*/
+.card {
+  max-width: 1000px;
+  color: #ffffff;
+}
+@media (min-width: 800px) {
+  .card {
+    display: flex;
+  }
+}
+.card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0 1rem 1rem;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  z-index: 2;
+  background: red;
+}
+.card__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3rem;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: skew(-10deg);
+  background: #0f71ba;
+}
+.card__title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card__text {
+  margin-bottom: 1rem;
+}
+/*--------------------------------2. Circle Card----*/
+.card-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  background: #ffffff;
+  color: #0f71ba;
+}
+.card-circle h2 {
+  margin-bottom: 0.5rem;
+  font-size: 5rem;
+}
+.card-circle p {
+  color: #232323;
+}
+/*----------------------------------3. Cast Card----*/
+.card-cast {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+.card-cast img {
+  display: block;
+  width: 100%;
+  max-width: 5rem;
+  height: auto;
+}
+.card-cast__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  padding: 0 0.5rem;
+  border-left: 5px solid #feec00;
+  background: linear-gradient(#2daae2, #0f71ba);
+  color: #ffffff;
+}
+.card-name {
+  margin-bottom: 0;
+  text-align: center;
+}
+/*--------------------------------4. Person Card----*/
+.card-person {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.card-person img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card-person__content {
+  flex: 1;
+  width: 100%;
+  padding: 2rem;
+  border-top: 5px solid #feec00;
+  background: linear-gradient(#2daae2, #0f71ba);
+  color: #ffffff;
+}
+.card-person__content p {
+  margin-bottom: 1rem;
+}
+.card-person__content p:last-child {
+  margin-bottom: 0;
+}
+/*----------------------------------5. Show Card----*/
+.card-show {
+  position: relative;
+  width: 100%;
+  padding: 5rem 1rem;
+  border-bottom: 5px dotted #2daae2;
+  border-right: 5px dotted #2daae2;
+  color: #343434;
+}
+.card-show h3 {
+  color: #0f71ba;
+}
+.card-show:last-of-type {
+  border-bottom: none;
+}
+.card-show:nth-child(even) {
+  border-left: 5px dotted #2daae2;
+  border-right: none;
+}
+.card-show:nth-child(even)::before {
+  left: -28px;
+}
+.card-show:nth-child(odd) {
+  text-align: right;
+}
+.card-show:nth-child(odd)::before {
+  right: -26px;
+}
+.card-show:nth-child(1)::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2010";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #feec00;
+  color: #343434;
+}
+.card-show:nth-child(2)::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2012";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #feec00;
+  color: #343434;
+}
+.card-show:nth-child(3)::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2013";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #feec00;
+  color: #343434;
+}
+.card-show:nth-child(4)::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2014";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #feec00;
+  color: #343434;
+}
+.card-show:nth-child(5)::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2014";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #feec00;
+  color: #343434;
+}
+.card-show:nth-child(6)::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2015";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #feec00;
+  color: #343434;
+}
+.card-show:nth-child(7)::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2016";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #feec00;
+  color: #343434;
+}
+.card-show:nth-child(8)::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2017";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #feec00;
+  color: #343434;
+}
+.card-show:nth-child(9)::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "2018";
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #feec00;
+  color: #343434;
+}
+/*----------------------------------6. Card Grid----*/
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  color: #0f71ba;
+}
+@media (min-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Default Icons
+2. Contact Icons
+3. Social Icons
+
+*/
+/*------------------------------1. Default Icons----*/
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+.icon path {
+  fill: #ffffff;
+  transition: fill 0.25s linear;
+}
+.icon:hover path {
+  fill: #feec00;
+}
+/*------------------------------2. Contact Icons----*/
+.contact-icon {
+  width: 2rem;
+  height: 2rem;
+}
+/*-------------------------------3. Social Icons----*/
+.icon--social {
+  width: 2rem;
+  height: 2rem;
+}
+.icon--social path {
+  fill: #4267b2;
+}
+.icon--social path:hover {
+  fill: #4267b2;
+}
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Glider Contain
+2. Glider
+3. Glider Arrows
+4. Glider Prev/Next Buttons
+
+
+*/
+/*-----------------------------1. Glider Contain----*/
+.glider-contain {
+  max-width: 1000px;
+}
+/*-------------------------------------2. Glider----*/
+.glider {
+  overflow: hidden;
+}
+/*------------------------------3. Glider Arrows----*/
+.glider-arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+/*-------------------4. Glider Prev/Next Buttons----*/
+.glider-prev,
+.glider-next {
+  position: relative;
+}
+/*----------------------------5. Carousel Slides----*/
+.carousel-slide {
+  margin: 0 1rem;
+}
+/*# sourceMappingURL=index.5dbdcb65.css.map */
