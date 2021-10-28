@@ -33,7 +33,7 @@
   width: 100%;
   padding: 3rem 1rem;
   text-align: center;
-  color: black;
+  color: $grey;
 
   & h2 {
     color: $secondary-color;
@@ -92,7 +92,7 @@
   height: 100%;
   padding: 2rem;
   background: $attention-color;
-  color: black;
+  color: $grey;
 }
 
 .work__two {
@@ -111,7 +111,7 @@
   height: 100%;
   text-align: right;
   background: $white;
-  color: black;
+  color: $grey;
 
   & img {
     width: 100%;

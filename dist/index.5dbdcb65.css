@@ -627,7 +627,7 @@ p {
   width: 100%;
   padding: 3rem 1rem;
   text-align: center;
-  color: black;
+  color: #343434;
 }
 .about-info h2 {
   color: #0f71ba;
@@ -678,7 +678,7 @@ p {
   height: 100%;
   padding: 2rem;
   background: #feec00;
-  color: black;
+  color: #343434;
 }
 .work__two {
   display: flex;
@@ -695,7 +695,7 @@ p {
   height: 100%;
   text-align: right;
   background: #ffffff;
-  color: black;
+  color: #343434;
 }
 .work__three img {
   width: 100%;
@@ -827,7 +827,7 @@ p {
 }
 .volunteering-info p {
   margin-bottom: 1rem;
-  color: black;
+  color: #343434;
 }
 @media (min-width: 700px) {
   .volunteering-content {
@@ -1049,7 +1049,7 @@ footer a {
 form {
   width: 100%;
   max-width: 1000px;
-  color: black;
+  color: #343434;
 }
 /*----------------------2. Default Labels/Inputs----*/
 .form-label {
