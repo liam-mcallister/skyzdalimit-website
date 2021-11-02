@@ -17,6 +17,7 @@
   align-items: center;
   width: 100%;
   padding: 3rem 1rem;
+  text-align: center;
   background: $white;
   color: $secondary-color;
 }
@@ -31,12 +32,25 @@
 }
 
 .coming-soon__show__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
   background: $secondary-color;
   color: $white;
+
+  // White border around show info
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border: 5px dotted $attention-color;
+
+    @media (min-width: 687px) {
+      text-align: right;
+    }
+  }
 
   @media (min-width: 687px) {
     width: 50%;
@@ -44,7 +58,6 @@
 }
 
 .coming-soon__show__img {
-
   & img {
     display: block;
     width: 100%;

@@ -510,6 +510,7 @@ p {
   align-items: center;
   width: 100%;
   padding: 3rem 1rem;
+  text-align: center;
   background: #ffffff;
   color: #0f71ba;
 }
@@ -523,12 +524,24 @@ p {
   }
 }
 .coming-soon__show__info {
+  padding: 1rem;
+  background: #0f71ba;
+  color: #ffffff;
+}
+.coming-soon__show__info div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
-  background: #0f71ba;
-  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border: 5px dotted #feec00;
+}
+@media (min-width: 687px) {
+  .coming-soon__show__info div {
+    text-align: right;
+  }
 }
 @media (min-width: 687px) {
   .coming-soon__show__info {
@@ -1060,15 +1073,17 @@ form {
   width: 100%;
   height: 2.5rem;
   margin-bottom: 1rem;
+  padding: 0 1rem;
   border: none;
-  box-shadow: 1px 1px 33px 4px rgba(0, 0, 0, 0.39);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 textarea {
   width: 100%;
   height: 12rem;
   margin-bottom: 2rem;
+  padding: 1rem;
   border: none;
-  box-shadow: 1px 1px 33px 4px rgba(0, 0, 0, 0.39);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 /*------------------------3. Form Inputs Section----*/
 @media (min-width: 600px) {
@@ -1233,12 +1248,13 @@ button {
   align-items: center;
   width: 250px;
   padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
   background: #ffffff;
-  color: #4267B2;
+  color: #4267b2;
 }
 .btn--social:hover {
   background: #ffffff;
-  color: #4267B2;
+  color: #4267b2;
 }
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
@@ -1333,9 +1349,10 @@ button {
   align-items: center;
   width: 200px;
   height: 200px;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 50%;
   text-align: center;
+  border: 10px solid #2daae2;
   background: #ffffff;
   color: #0f71ba;
 }
@@ -1344,7 +1361,7 @@ button {
   font-size: 5rem;
 }
 .card-circle p {
-  color: #232323;
+  color: #343434;
 }
 /*----------------------------------3. Cast Card----*/
 .card-cast {
@@ -1579,10 +1596,6 @@ button {
 }
 .icon path {
   fill: #ffffff;
-  transition: fill 0.25s linear;
-}
-.icon:hover path {
-  fill: #feec00;
 }
 /*------------------------------2. Contact Icons----*/
 .contact-icon {
@@ -1595,9 +1608,6 @@ button {
   height: 2rem;
 }
 .icon--social path {
-  fill: #4267b2;
-}
-.icon--social path:hover {
   fill: #4267b2;
 }
 /*----------------------------------------------------
