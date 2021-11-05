@@ -54,6 +54,10 @@
         />
         <meta name="twitter:image" content="../images/logos/logo.png" />
         <!-- STYLESHEETS -->
+        <link
+            rel="stylesheet"
+            href="../node_modules/baguettebox.js/dist/baguetteBox.min.css"
+        />
         <link rel="stylesheet" href="scss/styles.scss" />
     </head>
 
@@ -339,6 +343,7 @@
 
         <script src="../node_modules/baguettebox.js/dist/baguetteBox.min.js"></script>
         <script>
+            const baguetteBox = require("baguettebox.js");
             window.addEventListener("load", function () {
                 baguetteBox.run(".gallery");
             });
