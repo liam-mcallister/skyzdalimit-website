@@ -5,33 +5,10 @@
 ------------------------------------------------------
 
 1. Default Icons
-2. Contact Icons
-3. Social Icons
-
 */
 
 /*------------------------------1. Default Icons----*/
 .icon {
-  width: 3rem;
-  height: 3rem;
-
-  & path {
-    fill: $white;
-  }
-}
-
-/*------------------------------2. Contact Icons----*/
-.contact-icon {
-  width: 2rem;
-  height: 2rem;
-}
-
-/*-------------------------------3. Social Icons----*/
-.icon--social {
-  width: 2rem;
-  height: 2rem;
-
-  & path {
-    fill: $facebook-color;
-  }
+    width: 2rem;
+    height: 2rem;
 }
