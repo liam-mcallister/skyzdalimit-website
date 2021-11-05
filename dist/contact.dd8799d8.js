@@ -391,7 +391,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: "mapbox/streets-v11",
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: ""
+    accessToken: "pk.eyJ1Ijoic2t5emRhbGltaXQiLCJhIjoiY2t2bWVnYXVsMno4aTJvcTV6dmVraHo3NiJ9.JzYSzzCCJKKhn1-oUYIKCQ"
 }).addTo(myMap);
 const blueIcon = new L.Icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png",

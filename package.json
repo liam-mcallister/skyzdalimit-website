@@ -1,31 +1,30 @@
 {
-  "name": "skyzdalimit-website",
-  "version": "1.0.0",
-  "description": "A website for Skyzdalimit",
-  "main": "index.js",
-  "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/liam-mcallister/skyzdalimit-website.git"
-  },
-  "author": "Liam McAllister",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/liam-mcallister/skyzdalimit-website/issues"
-  },
-  "homepage": "https://github.com/liam-mcallister/skyzdalimit-website#readme",
-  "dependencies": {
-    "baguettebox.js": "^1.11.1",
-    "leaflet": "^1.7.1"
-  },
-  "devDependencies": {
-    "@parcel/packager-raw-url": "^2.0.0-beta.3.1",
-    "@parcel/transformer-sass": "^2.0.0-beta.3.1",
-    "@parcel/transformer-webmanifest": "^2.0.0-beta.3.1",
-    "parcel": "^2.0.0-beta.3.1",
-    "sass": "^1.34.1"
-  }
+    "name": "skyzdalimit-website",
+    "version": "1.0.0",
+    "description": "A website for Skyzdalimit",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/liam-mcallister/skyzdalimit-website.git"
+    },
+    "author": "Liam McAllister",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/liam-mcallister/skyzdalimit-website/issues"
+    },
+    "homepage": "https://github.com/liam-mcallister/skyzdalimit-website#readme",
+    "dependencies": {
+        "baguettebox.js": "^1.11.1",
+        "leaflet": "^1.7.1"
+    },
+    "devDependencies": {
+        "@parcel/packager-raw-url": "^2.0.0-beta.3.1",
+        "@parcel/transformer-sass": "^2.0.0-beta.3.1",
+        "@parcel/transformer-webmanifest": "^2.0.0-beta.3.1",
+        "parcel": "^2.0.0-beta.3.1",
+        "sass": "^1.34.1"
+    }
 }

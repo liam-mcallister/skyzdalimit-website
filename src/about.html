@@ -1,573 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- METADATA -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Us | Skyzdalimit</title>
+        <meta name="author" content="Liam McAllister" />
+        <meta
+            name="keywords"
+            content="Skyzdalimit, Omagh, Skyzdalimit Omagh, charity, theatre, arts, performing arts, about, about us"
+        />
+        <meta
+            name="description"
+            content="Skyzdalimit is an inclusive performing arts and leisure charity for people with a learning disability or autism."
+        />
+        <!-- FAVICONS -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../images/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../images/favicon/site.webmanifest" />
+        <!-- OPENGRAPH METADATA -->
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:title" content="About Us | Skyzdalimit" />
+        <meta
+            property="og:description"
+            content="Skyzdalimit is an inclusive performing arts and leisure charity for people with a learning disability or autism."
+        />
+        <meta property="og:image" content="../images/logos/logo.png" />
+        <meta property="og:image:type" content="image/png" />
+        <!-- TWITTER METADATA -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | Skyzdalimit" />
+        <meta
+            name="twitter:description"
+            content="Skyzdalimit is an inclusive performing arts and leisure charity for people with a learning disability or autism."
+        />
+        <meta name="twitter:image" content="../images/logos/logo.png" />
+        <!-- STYLESHEETS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+        />
+        <link rel="stylesheet" href="scss/styles.scss" />
+    </head>
 
-<head>
-    <!-- METADATA -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Skyzdalimit</title>
-    <meta name="author" content="Liam McAllister" />
-    <meta name="keywords"
-        content="Skyzdalimit, Omagh, Skyzdalimit Omagh, charity, theatre, arts, performing arts, about, about us" />
-    <meta name="description"
-        content="Skyzdalimit is an inclusive performing arts and leisure charity for people with a learning disability or autism." />
-    <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="../images/favicon/site.webmanifest" />
-    <!-- OPENGRAPH METADATA -->
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="About Us | Skyzdalimit" />
-    <meta property="og:description"
-        content="Skyzdalimit is an inclusive performing arts and leisure charity for people with a learning disability or autism." />
-    <meta property="og:image" content="../images/logos/logo.png" />
-    <meta property="og:image:type" content="image/png" />
-    <!-- TWITTER METADATA -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="About Us | Skyzdalimit" />
-    <meta name="twitter:description"
-        content="Skyzdalimit is an inclusive performing arts and leisure charity for people with a learning disability or autism." />
-    <meta name="twitter:image" content="../images/logos/logo.png" />
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
-    <link rel="stylesheet" href="scss/styles.scss" />
-</head>
+    <body id="body">
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo"
+                >Skyz<span>da</span>limit</a
+            >
+            <input class="burger-btn" type="checkbox" id="burger-btn" />
+            <label class="burger-label" for="burger-btn">
+                <span class="bar top"></span>
+                <span class="bar middle"></span>
+                <span class="bar bottom"></span>
+            </label>
+            <ul class="navbar__nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="productions.html" class="nav-link">Productions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="patrons.html" class="nav-link"
+                        >Patrons/Advocates</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="volunteering.html" class="nav-link"
+                        >Volunteering</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item"><a href="#" class="btn">Donate</a></li>
+            </ul>
+        </nav>
 
-<body id="body">
-    <nav class="navbar">
-        <a href="index.html" class="navbar-logo">Skyz<span>da</span>limit</a>
-        <input class="burger-btn" type="checkbox" id="burger-btn" />
-        <label class="burger-label" for="burger-btn">
-            <span class="bar top"></span>
-            <span class="bar middle"></span>
-            <span class="bar bottom"></span>
-        </label>
-        <ul class="navbar__nav">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="productions.html" class="nav-link">Productions</a>
-            </li>
-            <li class="nav-item">
-                <a href="patrons.html" class="nav-link">Patrons/Advocates</a>
-            </li>
-            <li class="nav-item">
-                <a href="volunteering.html" class="nav-link">Volunteering</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item"><a href="#" class="btn">Donate</a></li>
-        </ul>
-    </nav>
-
-    <header class="header-about">
-        <div class="inner">
-            <h1 class="header__h1">About Us</h1>
-            <p>
-                Through the medium of the musical theatre we aim to promote
-                emotional and physical integration and personal growth,
-                self-expression and creativity, self-empowerment and
-                independence, communication skills and decreased
-                stigmatisation and social isolation while equipping the
-                participants with dance, singing and acting skills.
-            </p>
-        </div>
-    </header>
-
-    <section class="about-info">
-        <div class="inner">
-            <h2>About Skyzdalimit</h2>
-            <p>
-                Skyzdalimit is an inclusive performing arts and leisure
-                charity for people with a learning disability or autism. The
-                theatre/leisure group is based in Omagh and presently has a
-                card of 40 from diverse cultural backgrounds with an age
-                range between 16-60 years.
-            </p>
-            <p>
-                Skyzdalimit has been leading the way in disability musical
-                theatre in N.Ireland since its inception in 2010. The card
-                has performed to capacity audiences at the Strule Arts
-                Centre, Omagh with professional productions of Grease, A
-                Greek Wedding, Musical Extravaganza and Blues Family Horror
-                Show, Love Me Love Me Not, a musical inspired by the High
-                School Musical film trilogy “Happily Ever After”, a musical
-                adapted from the Shrek film series and most recently, Prince
-                of Africa, inspired by the Lion King.
-            </p>
-            <p>
-                In March 2020, Covid 19 put a stop to rehearsals for its
-                next major production, Circus, inspired by The Greatest
-                Showman, now planned for June 2022.
-            </p>
-            <p>
-                We aim to take our shows to theatres across the Island of
-                Ireland and the UK to promote diversity and inspire other
-                groups and people with a learning disability or autism to
-                take to the stage to showcase their abilities.
-            </p>
-        </div>
-    </section>
-
-    <section class="work">
-        <div class="work__title">
-            <h2>Our Work</h2>
-            <p>
-                Skyzdalimit works in partnership with local secondary
-                schools to promote inclusion, by delivering a programme of
-                musical theatre activities to students with and without a
-                disability. Classes are held weekly at participating schools
-                with most of the programmes being funded. Our current
-                partners are Loreto GS, Drumragh Integrated College and
-                Arvalee School. Many participants progress to join
-                Skyzdalimit when they leave school providing them with a
-                smooth transition from school to adult life.
-            </p>
-            <p>
-                Skyzdalimit works in partnership with local charities and
-                senior citizens’ groups by providing opportunities for
-                therapeutic work to its members by using their skills at
-                their day-centre or at home, to help create some of our
-                costumes, masks, props for our shows, providing a
-                therapeutic activity for several afternoons a month. The
-                feel-good factor of doing something worthwhile for the
-                benefit of the community will give an added mood-boost and
-                sense of value. They will be able to see the result of their
-                contribution live on stage!
-            </p>
-        </div>
-        <div class="work__one">
-            <div class="work-box">
-                <h3>Aims</h3>
+        <header class="header-about">
+            <div class="inner">
+                <h1 class="header__h1">About Us</h1>
                 <p>
-                    Through the medium of the music, dance and drama
-                    Skyzdalimit aims to promote emotional and physical
-                    integration and personal growth, self-expression and
-                    creativity, self-empowerment and independence,
-                    communication skills while at the same time, equipping
-                    members with dance, singing and acting skills.
-                </p>
-                <p>
-                    A key element of its programme is the delivery of a
-                    professionally-staged show each year at the Strule Arts
-                    Centre in Omagh.
+                    Through the medium of the musical theatre we aim to promote
+                    emotional and physical integration and personal growth,
+                    self-expression and creativity, self-empowerment and
+                    independence, communication skills and decreased
+                    stigmatisation and social isolation while equipping the
+                    participants with dance, singing and acting skills.
                 </p>
             </div>
-        </div>
-        <div class="work__two">
-            <h3>Social Inclusion</h3>
-            <p>
-                Skyzdalimit works to address and remove existing obstacles
-                to social inclusion and to ensure that people with
-                disabilities have access to and equality of opportunity in
-                the arts, culture and leisure activities in the Omagh
-                District Council area and to create a culture where positive
-                attitudes are promoted towards people with a disability.
-            </p>
-        </div>
-        <div class="work__three">
-            <img src="../images/backgrounds/rehearsal-bg.jpg" alt="Skyzdalimit cast rehearsing" />
-            <div class="work__three__text">
-                <h3>Rehearsals</h3>
+        </header>
+
+        <section class="about-info">
+            <div class="inner">
+                <h2>About Skyzdalimit</h2>
                 <p>
-                    The programme is delivered weekly on a Monday evening
-                    from 7-9pm at South West College, Omagh. A team of
-                    dedicated volunteers assist members with dance routines,
-                    singing and drama. Preparation for a new show starts in
-                    September concluding with a musical production at the
-                    Strule arts Centre, Omagh and sometimes other theatres
-                    throughout the island of Ireland for a touring
-                    production.
+                    Skyzdalimit is an inclusive performing arts and leisure
+                    charity for people with a learning disability or autism. The
+                    theatre/leisure group is based in Omagh and presently has a
+                    card of 40 from diverse cultural backgrounds with an age
+                    range between 16-60 years.
+                </p>
+                <p>
+                    Skyzdalimit has been leading the way in disability musical
+                    theatre in N.Ireland since its inception in 2010. The card
+                    has performed to capacity audiences at the Strule Arts
+                    Centre, Omagh with professional productions of Grease, A
+                    Greek Wedding, Musical Extravaganza and Blues Family Horror
+                    Show, Love Me Love Me Not, a musical inspired by the High
+                    School Musical film trilogy “Happily Ever After”, a musical
+                    adapted from the Shrek film series and most recently, Prince
+                    of Africa, inspired by the Lion King.
+                </p>
+                <p>
+                    In March 2020, Covid 19 put a stop to rehearsals for its
+                    next major production, Circus, inspired by The Greatest
+                    Showman, now planned for June 2022.
+                </p>
+                <p>
+                    We aim to take our shows to theatres across the Island of
+                    Ireland and the UK to promote diversity and inspire other
+                    groups and people with a learning disability or autism to
+                    take to the stage to showcase their abilities.
                 </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="history">
-        <div class="inner">
-            <h1>Our History</h1>
-            <p>
-                <span>2011</span> - Skyzdalimit captured the attention of
-                BBC television in 2011 when it featured on BBC television's
-                Nationwide programme for being the first disability group in
-                N.Ireland to put on a major musical production of Grease.
-            </p>
-            <p>
-                <span>2014</span> - The theatre group was invited to perform
-                at the first ever UK Disability Pride Parade &amp; Festival
-                at City Hall in September 2014 as a representative of
-                disability performing arts. The performance stunned the 1000
-                + crowd gathered in City Hall grounds, winning national
-                press plaudits!
-            </p>
-            <p>
-                <span>2018</span> - Skyzdalimit are chosen by Mencap to be a
-                Beacon Group and receive significant funding to develop the
-                group further. It’s only the second group ever in N.Ireland
-                to be selected for this honour.
-            </p>
-            <p>
-                <span>2019</span> - Kerri Quinn, aka Vicki Jefferies from
-                Coronation Street, becomes Skyzdalimit Patron.
-            </p>
-            <p>
-                <span>2020</span> - Ryan Tracey, aka Ryan Duff Balloons of
-                Britain’s Got Talent fame, becomes Skyzdalimit Advocate.
-            </p>
-            <p>
-                <span>2020</span> - Skyzdalimit book their first ever tour
-                of Ireland &amp; UK with shows throughout the island,
-                including The Mac, Belfast, and Hale, Dublin. Tour cancelled
-                due to Covid 19!
-            </p>
-        </div>
-    </section>
-
-    <section class="cast">
-        <h2>Meet the cast</h2>
-        <div class="glider-contain">
-            <div class="glider">
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/breenK.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Kathleen Breen</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/coyleN.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Noel Coyle</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/crozierM.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Megan Crozier</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/soon.png" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Precios Gcado</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/gordonP.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Paul Gordon</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/gormleyN.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Noel Gormley</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/grimesM.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Maeve Grimes</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/hegenP.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Pearl Hegan</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/irwinV.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Victora Irwin</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/soon.png" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Hanna Kee</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/kellyE.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Edel Kelly</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/leckyA.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Andrew Lecky</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mcaleerE.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Emma McAleer</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mcbreartyM.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Megan McBrearty</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/soon.png" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Catherine McCarroll</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/soon.png" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Niall McCaul</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mccleanS.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Selena McClean</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mccooeyA.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Aisling McCooey</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mccuskerP.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Paul McCusker</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mcdaidE.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Eamon McDaid</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/soon.png" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Mark McElroy</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mcgladeK.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Kathyrn McGlade</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mckennaE.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Emma McKenna</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mckinneyP.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Patrick McKinney</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mcnultyC.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Claire McNulty</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mcstayC.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Claire McStay</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/maguireG.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Gerry Maguire</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/soon.png" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Luke Marshall</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mitchellL.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Lee Mitchell</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mullenR.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Rosemary Mullen</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/mulvihillW.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">William Mulvihill</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/obrienM.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Mary O’Brien</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/okaneG.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Gráinne O’Kane</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/quinnP.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Padraig Quinn</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/reidV.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Vincent Reid</p>
-                        </div>
-                    </div>
-                    <div class="card-cast">
-                        <img src="../images/people/cast/whiteC.jpg" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Claire White</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="card-cast">
-                        <img src="../images/people/cast/soon.png" alt="Skyzdalimit cast member" />
-                        <div class="card-cast__content">
-                            <p class="card-name">Ryan Gilloway</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="work">
+            <div class="work__title">
+                <h2>Our Work</h2>
+                <p>
+                    Skyzdalimit works in partnership with local secondary
+                    schools to promote inclusion, by delivering a programme of
+                    musical theatre activities to students with and without a
+                    disability. Classes are held weekly at participating schools
+                    with most of the programmes being funded. Our current
+                    partners are Loreto GS, Drumragh Integrated College and
+                    Arvalee School. Many participants progress to join
+                    Skyzdalimit when they leave school providing them with a
+                    smooth transition from school to adult life.
+                </p>
+                <p>
+                    Skyzdalimit works in partnership with local charities and
+                    senior citizens’ groups by providing opportunities for
+                    therapeutic work to its members by using their skills at
+                    their day-centre or at home, to help create some of our
+                    costumes, masks, props for our shows, providing a
+                    therapeutic activity for several afternoons a month. The
+                    feel-good factor of doing something worthwhile for the
+                    benefit of the community will give an added mood-boost and
+                    sense of value. They will be able to see the result of their
+                    contribution live on stage!
+                </p>
             </div>
-
-            <div class="glider-arrows">
-                <button aria-label="Previous" class="glider-prev">«</button>
-                <button aria-label="Next" class="glider-next">»</button>
-            </div>
-        </div>
-    </section>
-
-    <a href="#" class="donate-banner">
-        <h2>Want to help?</h2>
-        <h2>Donate Now!</h2>
-    </a>
-
-    <footer>
-        <div class="inner-flex">
-            <div class="footer__contact">
-                <div>
-                    <p>skyzdalimitclub@gmail.com</p>
-                    <p>072 4349 6441</p>
-                </div>
-                <div>
-                    <p>22 Knocksilla Park</p>
-                    <p>Omagh</p>
-                    <p>BT79 0JR</p>
-                </div>
-            </div>
-            <div class="footer__links">
-                <ul class="site-map">
-                    <li class="footer-item">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="productions.html">Productions</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="patrons.html">Patrons</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="volunteering.html">Volunteering</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <div class="footer-copyright">
-                    <p>&copy; Skyzdalimit 2021</p>
-                    <p>Registered Charity: 102443</p>
+            <div class="work__one">
+                <div class="work-box">
+                    <h3>Aims</h3>
                     <p>
-                        Created by
-                        <a href="https://liammcallister.co.uk/" target="_blank">Liam McAllister</a>
+                        Through the medium of the music, dance and drama
+                        Skyzdalimit aims to promote emotional and physical
+                        integration and personal growth, self-expression and
+                        creativity, self-empowerment and independence,
+                        communication skills while at the same time, equipping
+                        members with dance, singing and acting skills.
+                    </p>
+                    <p>
+                        A key element of its programme is the delivery of a
+                        professionally-staged show each year at the Strule Arts
+                        Centre in Omagh.
                     </p>
                 </div>
-                <div class="footer-buttons">
-                    <a href="https://www.facebook.com/skyzdalimitomagh/" class="btn btn--social" target="_blank">
-                        Check us out on
-                        <svg class="icon icon--social" viewBox="0 0 455.73 455.73">
-                            <path d="M0 0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893 
-                                35.582-79.475 79.475-79.475h62.025v64.622h-44.382c-13.947 0-25.254 
-                                11.307-25.254 25.254v49.953h68.521l-9.47 71.864h-59.051V455.73H455.73V0H0z" />
-                        </svg>
-                    </a>
+            </div>
+            <div class="work__two">
+                <h3>Social Inclusion</h3>
+                <p>
+                    Skyzdalimit works to address and remove existing obstacles
+                    to social inclusion and to ensure that people with
+                    disabilities have access to and equality of opportunity in
+                    the arts, culture and leisure activities in the Omagh
+                    District Council area and to create a culture where positive
+                    attitudes are promoted towards people with a disability.
+                </p>
+            </div>
+            <div class="work__three">
+                <img
+                    src="../images/backgrounds/rehearsal-bg.jpg"
+                    alt="Skyzdalimit cast rehearsing"
+                />
+                <div class="work__three__text">
+                    <h3>Rehearsals</h3>
+                    <p>
+                        The programme is delivered weekly on a Monday evening
+                        from 7-9pm at South West College, Omagh. A team of
+                        dedicated volunteers assist members with dance routines,
+                        singing and drama. Preparation for a new show starts in
+                        September concluding with a musical production at the
+                        Strule arts Centre, Omagh and sometimes other theatres
+                        throughout the island of Ireland for a touring
+                        production.
+                    </p>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script src="js/app.js"></script>
-</body>
+        <section class="history">
+            <div class="inner">
+                <h1>Our History</h1>
+                <p>
+                    <span>2011</span> - Skyzdalimit captured the attention of
+                    BBC television in 2011 when it featured on BBC television's
+                    Nationwide programme for being the first disability group in
+                    N.Ireland to put on a major musical production of Grease.
+                </p>
+                <p>
+                    <span>2014</span> - The theatre group was invited to perform
+                    at the first ever UK Disability Pride Parade &amp; Festival
+                    at City Hall in September 2014 as a representative of
+                    disability performing arts. The performance stunned the 1000
+                    + crowd gathered in City Hall grounds, winning national
+                    press plaudits!
+                </p>
+                <p>
+                    <span>2018</span> - Skyzdalimit are chosen by Mencap to be a
+                    Beacon Group and receive significant funding to develop the
+                    group further. It’s only the second group ever in N.Ireland
+                    to be selected for this honour.
+                </p>
+                <p>
+                    <span>2019</span> - Kerri Quinn, aka Vicki Jefferies from
+                    Coronation Street, becomes Skyzdalimit Patron.
+                </p>
+                <p>
+                    <span>2020</span> - Ryan Tracey, aka Ryan Duff Balloons of
+                    Britain’s Got Talent fame, becomes Skyzdalimit Advocate.
+                </p>
+                <p>
+                    <span>2020</span> - Skyzdalimit book their first ever tour
+                    of Ireland &amp; UK with shows throughout the island,
+                    including The Mac, Belfast, and Hale, Dublin. Tour cancelled
+                    due to Covid 19!
+                </p>
+            </div>
+        </section>
 
+        <section class="cast">
+            <h2>Meet the cast</h2>
+            <div class="glider-contain">
+                <div class="glider">
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/breenK.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Kathleen Breen</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/coyleN.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Noel Coyle</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/crozierM.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Megan Crozier</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/soon.png"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Precios Gcado</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/gordonP.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Paul Gordon</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/gormleyN.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Noel Gormley</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/grimesM.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Maeve Grimes</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/hegenP.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Pearl Hegan</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/irwinV.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Victora Irwin</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/soon.png"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Hanna Kee</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/kellyE.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Edel Kelly</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/leckyA.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Andrew Lecky</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mcaleerE.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Emma McAleer</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mcbreartyM.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Megan McBrearty</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/soon.png"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Catherine McCarroll</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/soon.png"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Niall McCaul</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mccleanS.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Selena McClean</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mccooeyA.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Aisling McCooey</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mccuskerP.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Paul McCusker</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mcdaidE.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Eamon McDaid</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/soon.png"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Mark McElroy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mcgladeK.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Kathyrn McGlade</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mckennaE.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Emma McKenna</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mckinneyP.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Patrick McKinney</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mcnultyC.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Claire McNulty</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mcstayC.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Claire McStay</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/maguireG.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Gerry Maguire</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/soon.png"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Luke Marshall</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mitchellL.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Lee Mitchell</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mullenR.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Rosemary Mullen</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/mulvihillW.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">William Mulvihill</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/obrienM.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Mary O’Brien</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/okaneG.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Gráinne O’Kane</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/quinnP.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Padraig Quinn</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/reidV.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Vincent Reid</p>
+                            </div>
+                        </div>
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/whiteC.jpg"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Claire White</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <div class="card-cast">
+                            <img
+                                src="../images/people/cast/soon.png"
+                                alt="Skyzdalimit cast member"
+                            />
+                            <div class="card-cast__content">
+                                <p class="card-name">Ryan Gilloway</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glider-arrows">
+                    <button aria-label="Previous" class="glider-prev">«</button>
+                    <button aria-label="Next" class="glider-next">»</button>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" class="donate-banner">
+            <h2>Want to help?</h2>
+            <h2>Donate Now!</h2>
+        </a>
+
+        <footer>
+            <div class="inner-flex">
+                <div class="footer__contact">
+                    <div>
+                        <p>skyzdalimitclub@gmail.com</p>
+                        <p>072 4349 6441</p>
+                    </div>
+                    <div>
+                        <p>22 Knocksilla Park</p>
+                        <p>Omagh</p>
+                        <p>BT79 0JR</p>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <ul class="site-map">
+                        <li class="footer-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="productions.html">Productions</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="patrons.html">Patrons</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="volunteering.html">Volunteering</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">
+                        <p>&copy; Skyzdalimit 2021</p>
+                        <p>Registered Charity: 102443</p>
+                        <p>
+                            Created by
+                            <a
+                                href="https://liammcallister.co.uk/"
+                                target="_blank"
+                                rel="noopener"
+                                >Liam McAllister</a
+                            >
+                        </p>
+                    </div>
+                    <div class="footer-buttons">
+                        <a
+                            href="https://www.facebook.com/skyzdalimitomagh/"
+                            class="btn btn--social"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Check us out on
+                            <svg
+                                class="icon icon--social"
+                                viewBox="0 0 455.73 455.73"
+                            >
+                                <path
+                                    d="M0 0v455.73h242.704V279.691h-59.33v-71.864h59.33v-60.353c0-43.893 
+                                35.582-79.475 79.475-79.475h62.025v64.622h-44.382c-13.947 0-25.254 
+                                11.307-25.254 25.254v49.953h68.521l-9.47 71.864h-59.051V455.73H455.73V0H0z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/app.js"></script>
+    </body>
 </html>
