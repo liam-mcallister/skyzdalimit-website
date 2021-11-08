@@ -8,6 +8,7 @@
 2. Card Button
 3. Burger Button
 4. Social Buttons
+5. Glider Buttons
 
 */
 
@@ -118,5 +119,15 @@ button {
     &:hover {
         background: $white;
         color: $facebook-color;
+    }
+}
+
+/*-----------------------------5. Glider Buttons----*/
+.btn-glider {
+    width: 4rem;
+    height: 4rem;
+
+    &:hover {
+        color: $attention-color;
     }
 }
