@@ -501,6 +501,7 @@ p {
 1. Coming Soon Section
 2. Our Mission Section
 3. Stats Section
+4. Funders Section
 
 */
 /*------------------------1. Coming Soon Section----*/
@@ -609,6 +610,41 @@ p {
   .stats__bottom {
     justify-content: flex-end;
   }
+}
+/*----------------------------4. Funders Section----*/
+.funders {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: #feec00;
+  color: #343434;
+}
+.funders P {
+  margin-bottom: 1rem;
+}
+.funders p:last-child {
+  margin-bottom: 0;
+}
+.funders__info {
+  flex: 2 1 0;
+}
+.funders__logos {
+  flex: 1 1 0;
+  justify-content: flex-end;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: repeat(2, min-content);
+  justify-items: center;
+  gap: 1rem;
+}
+.funders__logos img {
+  height: 5rem;
+  width: auto;
+}
+.logo-large {
+  grid-column: 1/4;
+  grid-row: 2/3;
 }
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
@@ -985,7 +1021,6 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0 2rem 0;
   padding: 0 0 2rem 0;
   border-bottom: 1px solid #ffffff;
 }
@@ -994,7 +1029,6 @@ footer a {
 }
 @media (min-width: 600px) {
   .footer__contact {
-    margin: 0 2rem 0 0;
     padding: 0 2rem 0 0;
     border-right: 1px solid #ffffff;
     border-bottom: none;
@@ -1056,6 +1090,7 @@ footer a {
 2. Default Labels/Inputs
 3. Form Inputs Section
 4. Form Submit Section
+5. Hidden Input
 
 */
 /*-------------------------------1. Default Form----*/
@@ -1106,6 +1141,10 @@ textarea {
 .form__submit {
   display: flex;
   justify-content: center;
+}
+/*-------------------------------5. Hidden Input----*/
+.hidden {
+  display: none;
 }
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
@@ -1158,6 +1197,7 @@ textarea {
 2. Card Button
 3. Burger Button
 4. Social Buttons
+5. Glider Buttons
 
 */
 /*-----------------------------1. Default Button----*/
@@ -1256,6 +1296,14 @@ button {
   background: #ffffff;
   color: #4267b2;
 }
+/*-----------------------------5. Glider Buttons----*/
+.btn-glider {
+  width: 4rem;
+  height: 4rem;
+}
+.btn-glider:hover {
+  color: #feec00;
+}
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
 ------------------------------------------------------
@@ -1277,6 +1325,7 @@ button {
 .inner-flex {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   max-width: 1000px;
 }
 @media (min-width: 600px) {
@@ -1585,30 +1634,11 @@ button {
 ------------------------------------------------------
 
 1. Default Icons
-2. Contact Icons
-3. Social Icons
-
 */
 /*------------------------------1. Default Icons----*/
 .icon {
-  width: 3rem;
-  height: 3rem;
-}
-.icon path {
-  fill: #ffffff;
-}
-/*------------------------------2. Contact Icons----*/
-.contact-icon {
   width: 2rem;
   height: 2rem;
-}
-/*-------------------------------3. Social Icons----*/
-.icon--social {
-  width: 2rem;
-  height: 2rem;
-}
-.icon--social path {
-  fill: #4267b2;
 }
 /*----------------------------------------------------
 ---------------------------------Table of Contents----

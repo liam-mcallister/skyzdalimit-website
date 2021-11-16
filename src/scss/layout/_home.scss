@@ -7,6 +7,7 @@
 1. Coming Soon Section
 2. Our Mission Section
 3. Stats Section
+4. Funders Section
 
 */
 
@@ -132,4 +133,46 @@
   @media (min-width: 500px) {
     justify-content: flex-end;
   }
+}
+
+/*----------------------------4. Funders Section----*/
+.funders {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: $attention-color;
+  color: $grey;
+
+  & P {
+    margin-bottom: 1rem;
+  }
+
+  & p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.funders__info {
+  flex: 2 1 0;
+}
+
+.funders__logos {
+  flex: 1 1 0;
+  justify-content: flex-end;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: repeat(2, min-content);
+  justify-items: center;
+  gap: 1rem;
+
+  & img {
+    height: 5rem;
+    width: auto;
+  }
+}
+
+.logo-large {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
 }
