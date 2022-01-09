@@ -1,223 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- METADATA -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Volunteering | Skyzdalimit</title>
+        <meta name="author" content="Liam McAllister" />
+        <meta
+            name="keywords"
+            content="Skyzdalimit, Omagh, Skyzdalimit Omagh, charity, theatre, arts, performing arts, volunteer, volunteering"
+        />
+        <meta
+            name="description"
+            content="Becoming a Skyzdalimit volunteer means giving your time to a truly worthwhile cause. Across all departments, Skyzdalimit relies on the dedication and support of its volunteers."
+        />
+        <!-- FAVICONS -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../images/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../images/favicon/site.webmanifest" />
+        <!-- OPENGRAPH METADATA -->
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:title" content="Volunteering | Skyzdalimit" />
+        <meta
+            property="og:description"
+            content="Becoming a Skyzdalimit volunteer means giving your time to a truly worthwhile cause. Across all departments, Skyzdalimit relies on the dedication and support of its volunteers."
+        />
+        <meta property="og:image" content="../images/logos/logo.png" />
+        <meta property="og:image:type" content="image/png" />
+        <!-- TWITTER METADATA -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Volunteering | Skyzdalimit" />
+        <meta
+            name="twitter:description"
+            content="Becoming a Skyzdalimit volunteer means giving your time to a truly worthwhile cause. Across all departments, Skyzdalimit relies on the dedication and support of its volunteers."
+        />
+        <meta name="twitter:image" content="../images/logos/logo.png" />
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="scss/styles.scss" />
+    </head>
 
-<head>
-    <!-- METADATA -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Volunteering | Skyzdalimit</title>
-    <meta name="author" content="Liam McAllister" />
-    <meta name="keywords"
-        content="Skyzdalimit, Omagh, Skyzdalimit Omagh, charity, theatre, arts, performing arts, volunteer, volunteering" />
-    <meta name="description"
-        content="Becoming a Skyzdalimit volunteer means giving your time to a truly worthwhile cause. Across all departments, Skyzdalimit relies on the dedication and support of its volunteers." />
-    <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="../images/favicon/site.webmanifest" />
-    <!-- OPENGRAPH METADATA -->
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="Volunteering | Skyzdalimit" />
-    <meta property="og:description"
-        content="Becoming a Skyzdalimit volunteer means giving your time to a truly worthwhile cause. Across all departments, Skyzdalimit relies on the dedication and support of its volunteers." />
-    <meta property="og:image" content="../images/logos/logo.png" />
-    <meta property="og:image:type" content="image/png" />
-    <!-- TWITTER METADATA -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Volunteering | Skyzdalimit" />
-    <meta name="twitter:description"
-        content="Becoming a Skyzdalimit volunteer means giving your time to a truly worthwhile cause. Across all departments, Skyzdalimit relies on the dedication and support of its volunteers." />
-    <meta name="twitter:image" content="../images/logos/logo.png" />
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="scss/styles.scss" />
-</head>
+    <body id="body">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img
+                    src="../images/logos/logo.png"
+                    alt="Skyzdalimit logo"
+                    class="logo-img"
+                />
+                <a href="index.html" class="logo-text"
+                    >Skyz<span>da</span>limit</a
+                >
+            </div>
+            <input class="burger-btn" type="checkbox" id="burger-btn" />
+            <label class="burger-label" for="burger-btn">
+                <span class="bar top"></span>
+                <span class="bar middle"></span>
+                <span class="bar bottom"></span>
+            </label>
+            <ul class="navbar__nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="productions.html" class="nav-link">Productions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="patrons.html" class="nav-link"
+                        >Patrons/Advocates</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="volunteering.html" class="nav-link"
+                        >Volunteering</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-<body id="body">
-    <nav class="navbar">
-        <a href="index.html" class="navbar-logo">Skyz<span>da</span>limit</a>
-        <input class="burger-btn" type="checkbox" id="burger-btn" />
-        <label class="burger-label" for="burger-btn">
-            <span class="bar top"></span>
-            <span class="bar middle"></span>
-            <span class="bar bottom"></span>
-        </label>
-        <ul class="navbar__nav">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="productions.html" class="nav-link">Productions</a>
-            </li>
-            <li class="nav-item">
-                <a href="patrons.html" class="nav-link">Patrons/Advocates</a>
-            </li>
-            <li class="nav-item">
-                <a href="volunteering.html" class="nav-link">Volunteering</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <header class="header-volunteering">
-        <div class="inner">
-            <h1 class="header__h1">Volunteering</h1>
-            <p>
-                Our brilliant volunteers are vital members of the
-                Skyzdalimit team. They share our love of theatre and
-                generously give their time to support our performances
-                front-of-house.
-            </p>
-        </div>
-    </header>
-
-    <section class="volunteering-info">
-        <div class="inner">
-            <h2>How to Volunteer</h2>
-            <div class="volunteering-content">
+        <header class="header-volunteering">
+            <div class="inner">
+                <h1 class="header__h1">Volunteering</h1>
                 <p>
-                    Volunteers are a vital ingredient of our success. Our
-                    volunteers are greatly valued and celebrated and we
-                    truly appreciate the sacrifice they make in giving up
-                    their free time to help our cast.
-                </p>
-                <p>
-                    We will do everything in our power to ensure your
-                    time with us will be enjoyable and that it will be a
-                    very positive and beneficial experience them.
-                </p>
-                <p>
-                    Skyzdalimit is a recognised centre for the Millennium
-                    Volunteer Awards and we can nominate our volunteers to
-                    receive awards such as the MV200.
-                </p>
-                <p>
-                    Some of the roles our volunteers typically perform
-                    during rehearsals are: assisting cast with dance
-                    routines, songs, music and acting; going over script
-                    with cast; setting up and putting away chairs, tables;
-                    serving water.
-                </p>
-                <p>
-                    Some of the roles for the show production include:
-                    make-up; dressing-room costume assistant; stage-crew;
-                    stage-side prompters; on-stage assistants.
-                </p>
-                <p>Registration is yearly at a cost of £10.</p>
-                <p>
-                    New members must complete a registration form by
-                    completing our online registration form or by requesting
-                    a form visa email.
-                </p>
-                <p>
-                    Membership is open to anyone aged 16 or over.
-                    Registration forms for applicants under 18 years must be
-                    signed by a parent or guardian.
-                </p>
-                <p>
-                    For further information about Skyzdalimit contact
-                    Patricia Coyle at skyzdalimitclub@gmail.com or mobile
-                    07969006925.
+                    Our brilliant volunteers are vital members of the
+                    Skyzdalimit team. They share our love of theatre and
+                    generously give their time to support our performances
+                    front-of-house.
                 </p>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section class="volunteers">
-        <h2>Meet our Volunteers</h2>
-        <div class="card-grid">
-            <div class="card-person">
-                <img src="../images/people/volunteers/doodyL.jpg" alt="Skyzdalimit volunteer" />
-                <div class="card-person__content">
-                    <h3 class="card-name">Loretta Doody</h3>
-                </div>
-            </div>
-
-            <div class="card-person">
-                <img src="../images/people/volunteers/gormleyG.jpg" alt="Skyzdalimit volunteer" />
-                <div class="card-person__content">
-                    <h3 class="card-name">Grianne Gormley</h3>
-                </div>
-            </div>
-
-            <div class="card-person">
-                <img src="../images/people/volunteers/gormleyP.jpg" alt="Skyzdalimit volunteer" />
-                <div class="card-person__content">
-                    <h3 class="card-name">Pamela Gormley</h3>
-                </div>
-            </div>
-
-            <div class="card-person">
-                <img src="../images/people/volunteers/mcstayM.jpg" alt="Skyzdalimit volunteer" />
-                <div class="card-person__content">
-                    <h3 class="card-name">Maura McStay</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="inner-flex">
-            <div class="footer__contact">
-                <div>
-                    <p>skyzdalimitclub@gmail.com</p>
-                    <p>074 4349 6441</p>
-                </div>
-                <div>
-                    <p>22 Knocksilla Park</p>
-                    <p>Omagh</p>
-                    <p>BT79 0JR</p>
-                </div>
-            </div>
-            <div class="footer__links">
-                <ul class="site-map">
-                    <li class="footer-item">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="productions.html">Productions</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="patrons.html">Patrons</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="volunteering.html">Volunteering</a>
-                    </li>
-                    <li class="footer-item">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <div class="footer-copyright">
-                    <p>&copy; Skyzdalimit 2021</p>
-                    <p>Registered Charity: 102443</p>
+        <section class="volunteering-info">
+            <div class="inner">
+                <h2>How to Volunteer</h2>
+                <div class="volunteering-content">
                     <p>
-                        Created by
-                        <a href="https://liammcallister.co.uk/" target="_blank" rel="noopener">Liam McAllister</a>
+                        Volunteers are a vital ingredient of our success. Our
+                        volunteers are greatly valued and celebrated and we
+                        truly appreciate the sacrifice they make in giving up
+                        their free time to help our cast.
                     </p>
-                </div>
-                <div class="footer-buttons">
-                    <a href="https://www.facebook.com/skyzdalimitomagh/" class="btn btn--social" target="_blank"
-                        rel="noopener">
-                        Check us out on
-                        <img class="icon" src="../images/icons/facebook.svg" alt="Facebook icon" />
-                    </a>
+                    <p>
+                        We will do everything in our power to ensure your time
+                        with us will be enjoyable and that it will be a very
+                        positive and beneficial experience them.
+                    </p>
+                    <p>
+                        Skyzdalimit is a recognised centre for the Millennium
+                        Volunteer Awards and we can nominate our volunteers to
+                        receive awards such as the MV200.
+                    </p>
+                    <p>
+                        Some of the roles our volunteers typically perform
+                        during rehearsals are: assisting cast with dance
+                        routines, songs, music and acting; going over script
+                        with cast; setting up and putting away chairs, tables;
+                        serving water.
+                    </p>
+                    <p>
+                        Some of the roles for the show production include:
+                        make-up; dressing-room costume assistant; stage-crew;
+                        stage-side prompters; on-stage assistants.
+                    </p>
+                    <p>Registration is yearly at a cost of £10.</p>
+                    <p>
+                        Membership is open to anyone aged 16 or over.
+                        Registration forms for applicants under 18 years must be
+                        signed by a parent or guardian.
+                    </p>
+                    <p>
+                        Download, complete and return the registration form
+                        below.
+                    </p>
+                    <p>
+                        For further information about Skyzdalimit contact
+                        Patricia Coyle at skyzdalimitclub@gmail.com or mobile
+                        07969006925.
+                    </p>
+                    <a href="../docs/registration-form.doc" class="btn"
+                        >Registration form</a
+                    >
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="js/app.js"></script>
-</body>
+        <section class="volunteers">
+            <h2>Meet our Volunteers</h2>
+            <div class="card-grid">
+                <div class="card-person">
+                    <img
+                        src="../images/people/volunteers/doodyL.jpg"
+                        alt="Skyzdalimit volunteer"
+                    />
+                    <div class="card-person__content">
+                        <h3 class="card-name">Loretta Doody</h3>
+                    </div>
+                </div>
 
+                <div class="card-person">
+                    <img
+                        src="../images/people/volunteers/gormleyG.jpg"
+                        alt="Skyzdalimit volunteer"
+                    />
+                    <div class="card-person__content">
+                        <h3 class="card-name">Grianne Gormley</h3>
+                    </div>
+                </div>
+
+                <div class="card-person">
+                    <img
+                        src="../images/people/volunteers/gormleyP.jpg"
+                        alt="Skyzdalimit volunteer"
+                    />
+                    <div class="card-person__content">
+                        <h3 class="card-name">Pamela Gormley</h3>
+                    </div>
+                </div>
+
+                <div class="card-person">
+                    <img
+                        src="../images/people/volunteers/mcstayM.jpg"
+                        alt="Skyzdalimit volunteer"
+                    />
+                    <div class="card-person__content">
+                        <h3 class="card-name">Maura McStay</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="inner-flex">
+                <div class="footer__contact">
+                    <div>
+                        <p>skyzdalimitclub@gmail.com</p>
+                        <p>074 4349 6441</p>
+                    </div>
+                    <div>
+                        <p>22 Knocksilla Park</p>
+                        <p>Omagh</p>
+                        <p>BT79 0JR</p>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <ul class="site-map">
+                        <li class="footer-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="productions.html">Productions</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="patrons.html">Patrons</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="volunteering.html">Volunteering</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">
+                        <p>&copy; Skyzdalimit 2021</p>
+                        <p>Registered Charity: 102443</p>
+                        <p>
+                            Created by
+                            <a
+                                href="https://liammcallister.co.uk/"
+                                target="_blank"
+                                rel="noopener"
+                                >Liam McAllister</a
+                            >
+                        </p>
+                    </div>
+                    <div class="footer-buttons">
+                        <a
+                            href="https://www.facebook.com/skyzdalimitomagh/"
+                            class="btn btn--social"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Check us out on
+                            <img
+                                class="icon"
+                                src="../images/icons/facebook.svg"
+                                alt="Facebook icon"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/app.js"></script>
+    </body>
 </html>
+
+<!-- Font made from http://www.onlinewebfonts.com
+    Online Web Fonts is licensed by CC BY 3.0 -->
