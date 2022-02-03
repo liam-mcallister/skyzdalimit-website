@@ -28,6 +28,8 @@ Throughout the entire process I would communicate weekly with the client in orde
 
 Going forward, I would like to incorporate a headless CMS into the website as it would give the client the ability to login and make their own changes to the website. I have already discussed this with the client and they have expressed interest in adding this functionality.
 
+![skyzdalimit](https://user-images.githubusercontent.com/49287478/152422772-d3f0d0c9-0d99-4112-b7e4-b2df57737e8b.jpg)
+
 ## 2. Tech
 
 This website uses the following technologies:
