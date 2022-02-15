@@ -12,36 +12,53 @@
 
 /*-----------------------------------1. 404 Body----*/
 .body-404 {
-  min-height: 100vh;
+    background: $primary-color;
 }
 
 /*--------------------------------2. 404 Section----*/
 .error-404 {
-  min-width: 100%;
-  min-height: 100vh;
-  padding: 2rem;
-  background: $primary-color;
-
-  & p {
-    margin-bottom: 1rem;
-  }
-
-  @media (min-width: 700px) {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
-  }
+    gap: 2rem;
+    height: 100vh;
+    padding: 2rem;
+
+    & p {
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 700px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
 }
 
 /*----------------------------------3. 404 Image----*/
 .img-404 {
-  max-width: 800px;
-  width: 100%;
-  height: auto;
-  margin-bottom: 4rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 
-  @media (min-width: 700px) {
-    margin-right: 3rem;
-    margin-bottom: 0;
-  }
+    & img {
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 700px) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+
+/*-----------------------------------4. 404 Text----*/
+.text-404 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    @media (min-width: 700px) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
 }
