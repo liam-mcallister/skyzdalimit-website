@@ -53,6 +53,39 @@ const addProductionsHeaderToDom = (items) => {
   });
 };
 
+const addProductionsToDom = (items) => {
+  items.forEach((item) => {
+    // Get the shows DIV element
+    const showSection = document.getElementById('show-inner');
+
+    const showContainer = document.createElement("div");
+    showContainer.classList.add('card-show');
+
+    const showDateContainer = document.createElement("div");
+    showDateContainer.classList.add('card-show__date');
+
+    const showDate = document.createElement("span");
+    showDate.classList.add('show-date');
+    const showName = document.createElement("h3");
+    const showDescription = document.createElement("p");
+
+    // Check if we have some text
+    if (item.showName) {
+      // Populate with text
+      showDate.innerText = item.showDate;
+      showName.innerText = item.showName;
+      showDescription.innerText = item.showDescription;
+    }
+
+    showDateContainer.append(showDate);
+    showContainer.append(showDateContainer);
+    showContainer.append(showName);
+    showContainer.append(showDescription);
+
+    showSection.prepend(showContainer);
+  });
+};
+
 const addGalleryToDom = (items) => {
   items.forEach((item) => {
     const images = item.galleryImagesCollection.items;
@@ -83,6 +116,10 @@ const addGalleryToDom = (items) => {
 fetch(fetchOptions.endpoint, fetchOptions)
   .then((response) => response.json())
   .then((data) => addProductionsHeaderToDom(data.data.headerWithTextCollection.items));
+
+fetch(fetchOptions.endpoint, fetchOptions)
+  .then((response) => response.json())
+  .then((data) => addProductionsToDom(data.data.timelineCardCollection.items));
 
 fetch(fetchOptions.endpoint, fetchOptions)
   .then((response) => response.json())
